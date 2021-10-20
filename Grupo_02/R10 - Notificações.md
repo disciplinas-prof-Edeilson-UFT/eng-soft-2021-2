@@ -32,10 +32,9 @@ Como usuário do aplicativo, quero está sempre por dentro do que está rolando 
 
 **Prototipação**
 
-![](https://prnt.sc/1ww8uuj)![](https://prnt.sc/1ww8vy4)
-
-**Barra de notificações do smatphone Tela inicial**
-
-![](https://prnt.sc/1ww8wu4)![](https://prnt.sc/1ww8xon)
+https://prnt.sc/1ww8uuj
+https://prnt.sc/1ww8vy4
+https://prnt.sc/1ww8wu4
+https://prnt.sc/1ww8xon
 
 **Pagina do perfil Pagina das notificações**
