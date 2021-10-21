@@ -37,4 +37,6 @@ Visando tambem garantir sua privacidade e segurança na hora de realizar o Logui
 
 O app tambem conta com uma aba de segurança onde você pode ver onde sua conta esta conectada e caso não seja um dispositivo de seu conhecimento você pode desconecta-ló 
 
+Prototipação :
+https://drive.google.com/drive/folders/1_uFkLIbx9V-f1YufqkOPEabNY-hza8Fa?usp=sharing
 
