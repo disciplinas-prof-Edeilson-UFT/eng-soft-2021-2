@@ -8,6 +8,9 @@ Que presta atenção no comportamento do cliente. Então, se quando notam alguma
 
 Para reforçar a segurança da sua conta no app iFood para Entregadores de invasões e ataques externos, agora, para fazer o acesso, além do e-mail cadastrado, você também precisará informar um código de segurança. 
 
+- **Fluxo Principal**
+ao cadastrar uma forma de pagamento ela é validada no momento de seu cadastro, caso a forma de pagamento seja cartão com um nome diferente da conta conectada uma verificação deve ser realizada atraves de ligação ou codigo privado, evitando assim golpes e prejuizos.
+
 - **Atores:** Clientes e  Lojista
 
 - **Pré-requisito:** O usuário deve ter o aplicativo instalado em seu aparelho e aceitar as normas de seguranças do app. 
