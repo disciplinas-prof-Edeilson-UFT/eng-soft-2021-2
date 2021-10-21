@@ -46,8 +46,14 @@ Com o passar todo tempo, os usuários estão buscando novas formas de fazer comp
 
 Prototipação
 
-![](Aspose.Words.0b648b7d-1af8-4d9a-b558-fb1dd67e64f7.001.jpeg)
+http://prnt.sc/1wzjrig
 
-![](Aspose.Words.0b648b7d-1af8-4d9a-b558-fb1dd67e64f7.002.jpeg)![](Aspose.Words.0b648b7d-1af8-4d9a-b558-fb1dd67e64f7.003.jpeg)
+http://prnt.sc/1wzjuxv
 
-![](Aspose.Words.0b648b7d-1af8-4d9a-b558-fb1dd67e64f7.004.jpeg)![](Aspose.Words.0b648b7d-1af8-4d9a-b558-fb1dd67e64f7.005.jpeg)
+http://prnt.sc/1wzjxuj
+
+http://prnt.sc/1wzk1k4
+
+http://prnt.sc/1wzk2fz
+
+
