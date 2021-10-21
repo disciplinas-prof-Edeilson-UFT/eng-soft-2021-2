@@ -1,5 +1,4 @@
-﻿Nome: Vinicius de Oliveira Oliveira
-
+﻿
 Especificação de Requisitos R08 - Pets.
 
 - Atores:
