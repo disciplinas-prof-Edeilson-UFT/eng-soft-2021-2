@@ -1,20 +1,14 @@
-﻿![](Aspose.Words.609ecef1-83f7-463b-b003-d1c930c05aa9.001.png)
+**R11 - Segurança** 
 
-**UNIVERSIDADE FEDERAL DO TOCANTINS**  
+- **Descrição sucinta:** 
 
-**CÂMPUS DE PALMAS** 
-
-` `**CURSO DE CIÊNCIA DA COMPUTAÇÃO**
-
-**Antonio da Silva Arieiro Junior R11 - Segurança** 
-
-- **Descrição sucinta:** O aplicativo conta com uma verificação de compras 
+O aplicativo conta com uma verificação de compras  e validação comportamental do usuario (compras com cartão)
 
 Que presta atenção no comportamento do cliente. Então, se quando notam alguma atitude suspeita, os sistemas levam isso em conta para não prejudicar alguma outra pessoa que possa estar sendo vítimas de golpe. 
 
 Para reforçar a segurança da sua conta no app iFood para Entregadores de invasões e ataques externos, agora, para fazer o acesso, além do e-mail cadastrado, você também precisará informar um código de segurança. 
 
-- **Atores:** Usuário será notificado com promoções e cupons na qual ele pode ser redirecionado para os restaurantes que se aplicam aquela notificação. 
+- **Atores:** Clientes e  Lojista
 - **Pré-requisito:** O usuário deve ter o aplicativo instalado em seu aparelho e aceitar as normas de seguranças do app. 
 - **Segurança no Fluxo do Pedido** 
 - **CARTÃO** 
