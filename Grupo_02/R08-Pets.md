@@ -31,8 +31,8 @@ O usuário deve ter o aplicativo instalado em seu dispositivo e estar logado, o 
 |Ver mais|A opção ver mais irá redirecionar para tela ao onde terá várias opções de rações.||
 |Ordena|A ordenação de periferia do usuário, podendo ser por tempo de entrega, preço, avaliação, taxa de entrega e distância.||
 |Para retirar|Na opção para retirar o usuário deve efetuar a compra pelo aplicativo, e se deslocar até a loja para pegar o produto.||
-|Entrega grátis|<p>Essa opção redireciona</p><p>- usuário para as lojas que estão aceitando entregas grátis.</p>||
-|Vale-refeição|<p>Essa opção redireciona</p><p>- usuário para os estabelecimentos que aceitam vale-alimentação.</p>||
+|Entrega grátis|Essa opção redireciona - usuário para as lojas que estão aceitando entregas grátis.||
+|Vale-refeição|Essa opção redireciona - usuário para os estabelecimentos que aceitam vale-alimentação.||
 |Filtros|A opção filtros o usuário pode escolher vários tipos de filtros.||
 - Fluxos alternativos
 
