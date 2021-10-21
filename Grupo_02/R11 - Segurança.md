@@ -16,9 +16,6 @@ Para reforçar a segurança da sua conta no app iFood para Entregadores de invas
 
 - **Atores:** Usuário será notificado com promoções e cupons na qual ele pode ser redirecionado para os restaurantes que se aplicam aquela notificação. 
 - **Pré-requisito:** O usuário deve ter o aplicativo instalado em seu aparelho e aceitar as normas de seguranças do app. 
-
-![](Aspose.Words.609ecef1-83f7-463b-b003-d1c930c05aa9.002.jpeg)
-
 - **Segurança no Fluxo do Pedido** 
 - **CARTÃO** 
 - Autenticar usuario atraves do acesso 
@@ -40,18 +37,4 @@ Visando tambem garantir sua privacidade e segurança na hora de realizar o Logui
 
 O app tambem conta com uma aba de segurança onde você pode ver onde sua conta esta conectada e caso não seja um dispositivo de seu conhecimento você pode desconecta-ló 
 
-**Tela de Acesso                                    Acesso por email** 
 
-![](Aspose.Words.609ecef1-83f7-463b-b003-d1c930c05aa9.003.jpeg)![](Aspose.Words.609ecef1-83f7-463b-b003-d1c930c05aa9.004.jpeg)
-
-**Cod. Validação de Usuario    Cod. Validação de Usuario** 
-
-![](Aspose.Words.609ecef1-83f7-463b-b003-d1c930c05aa9.005.jpeg)![](Aspose.Words.609ecef1-83f7-463b-b003-d1c930c05aa9.006.jpeg)
-
-**Tela de Segurança    Controlar Aparelhos Conectados** 
-
-![](Aspose.Words.609ecef1-83f7-463b-b003-d1c930c05aa9.007.jpeg)![](Aspose.Words.609ecef1-83f7-463b-b003-d1c930c05aa9.008.jpeg)
-
-**Remoção de Aparelho   Remoção concluida** 
-
-![](Aspose.Words.609ecef1-83f7-463b-b003-d1c930c05aa9.009.jpeg)![](Aspose.Words.609ecef1-83f7-463b-b003-d1c930c05aa9.010.jpeg)
