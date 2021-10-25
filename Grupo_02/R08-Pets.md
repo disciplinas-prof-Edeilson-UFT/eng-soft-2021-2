@@ -43,16 +43,17 @@ O usuário pode buscar por algo específico, após essa busca ele será redireci
 
 Com o passar todo tempo, os usuários estão buscando novas formas de fazer compras online por trazer vários benefícios e por ser mais eficiente, contudo o ifood pets traz o conforto de pedir, várias promoções e várias opções de pet shops diferente, para trazer o bem estar e conforto para seus animais.
 
-Prototipação
+<h2>Prototipação<h2/>
 
-http://prnt.sc/1wzjrig
+![Tela 1](https://imgur.com/Nn3RjIA.jpg)
 
-http://prnt.sc/1wzjuxv
+![Tela 2](https://imgur.com/sCgsV3Z.jpg)
+![Tela 3](https://imgur.com/zl41lOW.jpg)
 
-http://prnt.sc/1wzjxuj
+![Tela 4](https://imgur.com/xPkB89k.jpg)
+![Tela 5](https://imgur.com/VJs2YeV.jpg)
 
-http://prnt.sc/1wzk1k4
+<h2>Diagrama de Casos de Uso<h2/>
 
-http://prnt.sc/1wzk2fz
-
+![Caso de Uso](https://imgur.com/uZyawUC.jpg)
 
