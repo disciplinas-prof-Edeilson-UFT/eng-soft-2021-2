@@ -32,10 +32,9 @@ Como usuário do aplicativo, quero está sempre por dentro do que está rolando 
 
 **Prototipação**
 
+<img src="https://images.ecycle.com.br/wp-content/uploads/2021/05/20195924/o-que-e-paisagem.jpg"/>
 <img src="https://prnt.sc/1ww8uuj"/>
 <img src="https://prnt.sc/1ww8vy4"/>
 <img src="https://prnt.sc/1ww8wu4"/>
 <img src="https://prnt.sc/1ww8xon"/>
 
-
-**Pagina do perfil Pagina das notificações**
