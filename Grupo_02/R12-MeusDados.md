@@ -33,18 +33,18 @@ O usuário deve ter acesso ao site da aplicação ou ter o aplicativo instalado 
 Como usuário do aplicativo, preciso criar senha adicional para ter acesso a algumas áreas do aplicativo e alterar informações da conta, deixando meus dados sempre atualizados e mais protegidos.  
 **Prototipação** 
 
-<img src="https://prnt.sc/1wzrpz4" width="200" alt="Página inicial">
+<img src="https://i.imgur.com/URa3Qkp.jpeg" width="200" alt="Página inicial">
                                                         
-<img src="https://prnt.sc/1wzrwhn" width="200" alt="Perfil">    
+<img src="https://i.imgur.com/Cr9Vy0O.jpg" width="200" alt="Perfil">    
 
-<img src="https://prnt.sc/1wzrz3l" width="200" alt="Meus dados">
+<img src="https://i.imgur.com/IWmex0C.jpg" width="200" alt="Meus dados">
 
-<img src="https://prnt.sc/1wzs0vo" width="200" alt="Informações pessoais">
+<img src="https://i.imgur.com/3sTRc53.jpg" width="200" alt="Informações pessoais">
 
-<img src="https://prnt.sc/1wzsdng" width="200" alt="Senha Adicional">
+<img src="https://i.imgur.com/eL9z72C.jpg" width="200" alt="Senha Adicional">
 
-<img src="https://prnt.sc/1wzsesw" width="200" alt="Criar senha">
+<img src="https://i.imgur.com/6339CSw.jpg" width="200" alt="Criar senha">
 
-<img src="https://prnt.sc/1wzsg2x" width="200" alt="Dados de contato">
+<img src="https://i.imgur.com/p2MJYyc.jpg" width="200" alt="Dados de contato">
 
-<img src="https://prnt.sc/1wzsh7d" width="200" alt="Credenciais">
+<img src="https://i.imgur.com/pOslvEF.jpg" width="200" alt="Credenciais">
