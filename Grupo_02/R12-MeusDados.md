@@ -33,18 +33,18 @@ O usuário deve ter acesso ao site da aplicação ou ter o aplicativo instalado 
 Como usuário do aplicativo, preciso criar senha adicional para ter acesso a algumas áreas do aplicativo e alterar informações da conta, deixando meus dados sempre atualizados e mais protegidos.  
 **Prototipação** 
 
-https://prnt.sc/1wzrpz4
+<img src="https://prnt.sc/1wzrpz4" width="200" alt="Página inicial">
                                                         
-https://prnt.sc/1wzrwhn    
+<img src="https://prnt.sc/1wzrwhn" width="200" alt="Perfil">    
 
-https://prnt.sc/1wzrz3l
+<img src="https://prnt.sc/1wzrz3l" width="200" alt="Meus dados">
 
-https://prnt.sc/1wzs0vo
+<img src="https://prnt.sc/1wzs0vo" width="200" alt="Informações pessoais">
 
-https://prnt.sc/1wzsdng
+<img src="https://prnt.sc/1wzsdng" width="200" alt="Senha Adicional">
 
-https://prnt.sc/1wzsesw
+<img src="https://prnt.sc/1wzsesw" width="200" alt="Criar senha">
 
-https://prnt.sc/1wzsg2x
+<img src="https://prnt.sc/1wzsg2x" width="200" alt="Dados de contato">
 
-https://prnt.sc/1wzsh7d
+<img src="https://prnt.sc/1wzsh7d" width="200" alt="Credenciais">
