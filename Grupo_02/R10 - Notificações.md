@@ -32,10 +32,10 @@ Como usuário do aplicativo, quero está sempre por dentro do que está rolando 
 
 **Prototipação**
 
-<img src="https://prnt.sc/1ww8uuj" width="400px"/>
-<img src="https://prnt.sc/1ww8vy4" width="400px"/>
-<img src="https://prnt.sc/1ww8wu4" width="400px"/>
-<img src="https://prnt.sc/1ww8xon" width="400px"/>
+<img src="https://prnt.sc/1ww8uuj"/>
+<img src="https://prnt.sc/1ww8vy4"/>
+<img src="https://prnt.sc/1ww8wu4"/>
+<img src="https://prnt.sc/1ww8xon"/>
 
 
 **Pagina do perfil Pagina das notificações**
