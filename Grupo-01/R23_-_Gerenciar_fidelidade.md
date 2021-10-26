@@ -18,7 +18,7 @@
 
 &nbsp;
 
-**R5 - Gerenciar Fidelidade**
+**R23 - Gerenciar Fidelidade**
 
 Palmas 2021
 
