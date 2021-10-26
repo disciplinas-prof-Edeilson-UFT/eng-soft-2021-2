@@ -78,17 +78,17 @@ Como lojista eu quero adicionar um novo item ao meu cardápio para que fique dis
 **Prototipação de telas**
 
 
-![Tela Inicial](Aspose.Words.83e0569e-fe8b-4f43-95a1-99dc29cd94da.001.jpeg) 
+![Tela Inicial](https://imgur.com/Z4nOSWp.jpeg) 
 
-![Abas do lojista](Aspose.Words.83e0569e-fe8b-4f43-95a1-99dc29cd94da.002.jpeg)
+![Abas do lojista](https://imgur.com/eYNRTIq.jpeg)
 
-![Cardápio da loja](Aspose.Words.83e0569e-fe8b-4f43-95a1-99dc29cd94da.003.png) 
+![Cardápio da loja](https://imgur.com/7QWkJYw.png) 
 
-![Adicionar uma nova categoria para o item](Aspose.Words.83e0569e-fe8b-4f43-95a1-99dc29cd94da.004.png)
+![Adicionar uma nova categoria para o item](https://imgur.com/N9AMoUC.png)
 
-![Tela para inserção do novo item](Aspose.Words.83e0569e-fe8b-4f43-95a1-99dc29cd94da.005.png)
+![Tela para inserção do novo item](https://imgur.com/SvCBSU3.png)
 
 
 **Diagrama de Caso de Uso**
 
-![](Aspose.Words.83e0569e-fe8b-4f43-95a1-99dc29cd94da.006.jpeg)
+![](https://imgur.com/R6XIRjN.jpeg)
