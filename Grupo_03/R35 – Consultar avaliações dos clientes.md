@@ -1,4 +1,4 @@
-﻿**R35 – Consultar avaliações dos clientes**
+﻿**R35 – Consultar avaliações dos clientes** 
 
 **Atores:**
 
@@ -42,7 +42,7 @@ No passo 3 do fluxo principal, o ator pode filtrar as avaliações por nota méd
 
 Eu como lojista gostaria de ver as avaliações dos meus clientes, sobre os pedidos realizados. Eu vou na aba avaliações, vejo a lista de avaliações com sua nota média, seleciono e vejo mais detalhes, contendo nome, data de avaliação, nota média e comentário do cliente.
 
-**Prototipação**
+**Prototipação** 
 
 
 ![](https://i.imgur.com/FLqeBZi.png)
