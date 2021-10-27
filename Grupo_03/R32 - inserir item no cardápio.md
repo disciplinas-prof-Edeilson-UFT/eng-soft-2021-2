@@ -91,4 +91,4 @@ Como lojista eu quero adicionar um novo item ao meu cardápio para que fique dis
 
 **Diagrama de Caso de Uso**
 
-![](https://imgur.com/R6XIRjN.jpeg)
+![Diagrama de Caso de Uso](https://imgur.com/R6XIRjN.jpeg)
