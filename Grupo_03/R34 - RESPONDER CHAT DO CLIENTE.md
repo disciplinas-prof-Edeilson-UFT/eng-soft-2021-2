@@ -75,13 +75,13 @@ FP003 - O lojista acessa a aba de chat “Finalizados”, e seleciona algum chat
 
 **Prototipação**
 
-<img src="https://imgur.com/a/pcQ8aHL" width="200" alt="Onde encontrar"/>
+<img src="https://imgur.com/HZKZsfq.png" width="200" alt="Onde encontrar"/>
 
-<img src="https://imgur.com/4kBWQhq" width="200" alt="2 Abas"/>
+<img src="https://imgur.com/4kBWQhq.jpeg" width="200" alt="2 Abas"/>
 
-<img src="https://imgur.com/a/tvWyj6X" width="200" alt="Finalizar Chat"/>
+<img src="https://imgur.com/VoElIeW.png" width="200" alt="Finalizar Chat"/>
 
 
 **Diagrama**
 
-<img src="https://imgur.com/a/ci3ABCX" width="200" alt="Diagrama"/>
+<img src="https://imgur.com/3xh7A9d.png" width="400" alt="Diagrama"/>
