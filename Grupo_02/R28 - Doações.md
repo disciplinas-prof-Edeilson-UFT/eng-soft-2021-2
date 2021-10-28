@@ -1,4 +1,4 @@
-﻿**R28 - Notificações**
+﻿**R28 - Doações**
 
 **Atores:**
 
@@ -10,7 +10,9 @@ No perfil do usuário terá uma opção de doação, tendo algumas opções para
 
 **Pré-requisito:**
 
-O usuário deve ter acesso a plataforma do aplicativo. **Fluxo Principal:**
+O usuário deve ter acesso a plataforma do aplicativo. 
+
+**Fluxo Principal:**
 
 Abrir o aplicativo
 
