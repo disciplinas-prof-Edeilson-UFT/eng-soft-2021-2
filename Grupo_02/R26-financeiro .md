@@ -21,7 +21,13 @@ O usuário deve ser lojista parceiro do ifood e está logado na plataforma.
 
 |Campos|Obrigatório: S/N|Editável: S/N|Formato|
 | - | - | - | - |
-|Dados bancários|S|S|Números/Texto|
+|Dados bancários(CPF)|S|S|Números|
+|Dados bancários(Banco)|S|S|Texto|
+|Dados bancários(Agencia)|S|S|Números|
+|Dados bancários(Digito)|S|S|Números|
+|Dados bancários(Conta)|S|S|Números|
+|Dados bancários(Digito)|S|S|Números|
+|Dados bancários(Tipo conta)|S|S|Texto|
 
 &nbsp;
 - **Opções dos usuários**
