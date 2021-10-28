@@ -27,6 +27,7 @@ Acessar Doações
 |Formas de doar|Escolha uma das doações|--------|
 |Quero doar|Escolher o valor que desejar doar|--------|
 |Saiba mais|Descrição detalhada sobre as doações|--------|
+
 Fluxo alternativo: ------------------------
 
 **User Storie: Minhas doações**
