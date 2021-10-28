@@ -28,7 +28,7 @@ Acessar Doações
 |Quero doar|Escolher o valor que desejar doar|--------|
 |Saiba mais|Descrição detalhada sobre as doações|--------|
 
-Fluxo alternativo: ------------------------
+**Fluxo alternativo:** ------------------------
 
 **User Storie: Minhas doações**
 
