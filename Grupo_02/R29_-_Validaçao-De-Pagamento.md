@@ -1,42 +1,35 @@
 **R29 - Validação de pagamento** 
 
 - **Descrição sucinta:** 
-Apos o cliente escolher seu pedido entra em pratica a forma de validação de pagamento, caso o cliente escolha a forma de pagamento 
-sendo cartão, um request é enviado ao banco escolhido validando ou não o pagamento do cliente, caso falhe em request um alerta é enviado na interface do cliente comunicando o erro. Caso tudo ocorra bem o pagamento é debitado e o pedido liberado.
+O repasse ao logista é feito apos a validação de pagamento do usuario, o repasse é feito de acordo com o 'contrato' com o restaurante retirando as devidas taxas. 
 
 - **Fluxo Principal**
-ao cadastrar uma forma de pagamento ela é validada no momento de seu cadastro, caso a forma de pagamento seja cartão com um nome diferente da conta conectada uma verificação deve ser realizada atraves de ligação ou codigo privado, evitando assim golpes e prejuizos.
+Ao cliente realizar uma compra em seu estabalecimento, essa compra é validada pelo fluxo de pagamento do cliente, logo apos ser confirmada o saldo entra em 'caixa' da empresa parceira ja com sua devida taxa retirada, porem ainda não livre para retirada da plataforma pois é preciso validar a entrega do pedido para que o valor seja liberado para o fluxo financeiro da empresa parceira
 
-- **Atores:** Clientes
+- **Atores:** Lojistas
 
-- **Pré-requisito:** O usuário deve ter o aplicativo instalado em seu aparelho e aceitar as normas de seguranças do app. 
+- **Pré-requisito:** Ter CNPJ;
+Equipe de entregadores;
+Uma base de faturamento;
+Internet;
+Computador com Windows 
+- **Campo de formulario:**
 
-- **Segurança no Fluxo do Pedido**
- 
-- **CARTÃO** 
+|**Campo** |**Obrigatório** |**Editável** |**Formato** |
+| - | - | - | - |
+|Pagamento |sim |nao |Cartao/Dinheiro |
 
-Autenticar usuario atraves do acesso 
-Validar a forma de Pagamento baseado no historico do usuario 
-Verificar as credencias do cartão e usuario  
-Verificar ultimas compras feitas com cartão (Se for a primeira compra com o cartão verificar com a instituição a liberação do pedido) 
-- **Dinheiro** 
-Recebe o pedido – Verifica as ultimas compras do usuario (se são validas) 
+- **Validação no Fluxo do Pedido**
+Receber o pedido do cliente apos o pagamento ser liberado pela plataforma, o pedido é preparado e vai para entrega-> apos a entrega se concluida e confirmada pelo entregador o saldo entra em caixa.
+- **Caso de falha** 
+em casos de falha em entrega ou em repasse do restaurante para o cliente, o cliente podera abrir um chamado e suspender o pagamento.
+- **Apoio ao Parceiro** 
+caso o pedido seja realizado para pagamento no local  e de alguma forma algum imprevisto surgir e o pagamento falhar, a plataforma arca com parte do gasto para prestar suporte ao logista (ja que fez parte da falha em validar o usuario)
 
-**Segurança para os logistas** 
-
-Caso o usuario diariamente efetue pedidos com contas bancarias diferentes uma outra validação é realizada, para evitar fraudes bancarias
-
-Para garantir que não havera vasamento de dados bancarios por parte do app, o app não guarda seus dados, seus **dados** completos de **cartão** não ficam armazenados nas bases do app, mas sim em seu telefone celular ou dispositivo utilizado na compra. 
- 
 
 **use storie** 
-quero salvar meus dados de pagamento no app para que toda vez que for comprar isso não seja validado sempre
+Sou um restaurante o e estou com medo de entrar no mercado de vendas e tomar algum tipo de prejuizo com pessoas que pedem e não pagam, é dificil manter um tipo de fornecimento desta maneira sem segurança alguma.
 
 Prototipação :
-****
-- **Diagrama do caso de Uso (inserindo uma forma valida de pagamento)**
-<img src="https://i.imgur.com/GC2AZUO.jpg" width="500" height="500" />
-<img src="https://i.imgur.com/gf7M2rD.jpg" width="500" height="500" />
-<img src="https://i.imgur.com/j7TgW9h.jpg" width="500" height="500" />
-<img src="https://i.imgur.com/mVLjKsu.jpg" width="500" height="500" />
+![](https://i.imgur.com/j2HO2sX.jpg)
 
