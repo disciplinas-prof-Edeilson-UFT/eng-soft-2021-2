@@ -1,4 +1,4 @@
-**R11 - Segurança** 
+**R11 - Validação de pagamento** 
 
 - **Descrição sucinta:** 
 Apos o cliente escolher seu pedido entra em pratica a forma de validação de pagamento, caso o cliente escolha a forma de pagamento 
@@ -33,5 +33,4 @@ Para garantir que não havera vasamento de dados bancarios por parte do app, o a
 quero salvar meus dados de pagamento no app para que toda vez que for comprar isso não seja validado sempre
 
 Prototipação :
-https://drive.google.com/drive/folders/1_uFkLIbx9V-f1YufqkOPEabNY-hza8Fa?usp=sharing
-
+https://drive.google.com/file/d/13IMgEvuJTI_KZlpe1u8-Sl7lO7e6xCG5/view?usp=sharing
