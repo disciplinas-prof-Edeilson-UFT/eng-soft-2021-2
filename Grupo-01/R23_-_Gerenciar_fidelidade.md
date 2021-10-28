@@ -84,8 +84,36 @@ A medida que resultados significativos são alcançados, é de escolha ideal tra
 
 
 &nbsp;
-- **Casos de uso**
+- **Prototipação**
+
+&nbsp;
 
 
-Aguardando concordâcia para ser implementado
+![Image](https://ajuda.programaconsumer.com.br/wp-content/uploads/2018/09/Consumer_23-09-21_15h53s14.png)
+
+
+&nbsp;
+
+
+![Image](https://ajuda.programaconsumer.com.br/wp-content/uploads/2018/09/Consumer_23-09-21_15h54s04.png)
+
+
+&nbsp;
+
+
+![Image](https://ajuda.programaconsumer.com.br/wp-content/uploads/2018/09/Consumer_23-09-21_15h56s28.png)
+
+
+&nbsp;
+
+
+![Image](https://ajuda.programaconsumer.com.br/wp-content/uploads/2018/09/Consumer_23-09-21_15h57s42.png)
+
+
+&nbsp;
+
+
+![Image](https://ajuda.programaconsumer.com.br/wp-content/uploads/2018/09/Consumer_23-09-21_15h58s28.png)
+
+
 &nbsp;
