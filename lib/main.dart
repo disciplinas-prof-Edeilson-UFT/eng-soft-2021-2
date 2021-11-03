@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'layouts/default.dart';
+
 void main() {
   runApp(const App());
 }
@@ -14,7 +16,7 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Container(),
+      home: LayoutDefault(),
     );
   }
 }
