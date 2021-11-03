@@ -16,9 +16,6 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  redux:
-  flutter_redux:
-  equatable:
   flutter_lints: ^1.0.0
 
 flutter:

@@ -10,9 +10,9 @@ class AppState {
 
 AppState _reducer(AppState state, dynamic action) {
   if (action is AlterarPagina) {
-    return AppState(paginaAtual: 3);
+    return AppState(paginaAtual: action.currentIndex);
   } else {
-    return AppState(paginaAtual: 1);
+    return AppState();
   }
 }
 

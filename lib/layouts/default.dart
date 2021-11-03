@@ -10,13 +10,10 @@ class LayoutDefault extends StatefulWidget {
   _LayoutDefaultState createState() => _LayoutDefaultState();
 }
 
-class _LayoutDefaultState extends State<LayoutDefault>
-    with SingleTickerProviderStateMixin {
-  int _paginaAtual = 0;
-
+class _LayoutDefaultState extends State<LayoutDefault>{
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       bottomNavigationBar: NavegacaoRodape(),
     );
   }
