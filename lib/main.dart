@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
 import 'layouts/default.dart';
 
@@ -14,9 +15,9 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: AppCores.vermelhoPrincipal,
       ),
-      home: LayoutDefault(),
+      home: const LayoutDefault(),
     );
   }
 }
