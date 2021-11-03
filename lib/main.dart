@@ -13,7 +13,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Ifood | ES - 2021.1',
       theme: ThemeData(
         primarySwatch: AppCores.vermelhoPrincipal,
       ),

@@ -11,6 +11,11 @@ class _PaginaInicioState extends State<PaginaInicio>
     with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const Scaffold(
+      body: Text(
+        'Início',
+        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+      ),
+    );
   }
 }

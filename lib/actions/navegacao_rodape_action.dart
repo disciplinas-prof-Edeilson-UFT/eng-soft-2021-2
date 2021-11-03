@@ -1,4 +1,5 @@
-class AlterarPagina{
-  final int currentIndex;
-  AlterarPagina(this.currentIndex);
+class AlterarPagina {
+  final int pagina;
+
+  AlterarPagina(this.pagina);
 }

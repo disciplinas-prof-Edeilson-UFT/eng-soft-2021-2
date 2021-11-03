@@ -11,6 +11,11 @@ class _PaginaPedidosState extends State<PaginaPedidos>
     with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return  const Scaffold(
+      body: Text(
+        'Pedidos',
+        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+      ),
+    );
   }
 }
