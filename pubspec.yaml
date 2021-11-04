@@ -1,0 +1,20 @@
+name: ifood_engenharia_de_software
+description: Versão simplificado do Ifood feita em Flutter para a disciplina de Engenharia de Software 2021.2
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_lints: ^1.0.4
+
+flutter:
+  uses-material-design: true
