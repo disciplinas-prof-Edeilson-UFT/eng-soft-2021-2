@@ -1,6 +1,6 @@
 # Outras recriações do Ifood em Flutter
 
-## Entrevista com os criadores do Ifood explicando porque utilizam o Flutter
+## Entrevista com os programadores do Ifood explicando porque utilizam o Flutter
 
 [Link youtube](https://www.youtube.com/watch?v=8ZzJZd0r-4c)
 
