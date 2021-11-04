@@ -17,7 +17,8 @@ class LayoutDefault extends StatefulWidget {
 class _LayoutDefaultState extends State<LayoutDefault> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(child: Scaffold(
+    return SafeArea(
+        child: Scaffold(
       body: AnimatedBuilder(
           animation: appStore,
           builder: (_, __) {
@@ -33,7 +34,7 @@ class _LayoutDefaultState extends State<LayoutDefault> {
               return const Text('Error!!');
             }
           }),
-      bottomNavigationBar: NavegacaoRodape(),
+      bottomNavigationBar: const NavegacaoRodape(),
     ));
   }
 }
