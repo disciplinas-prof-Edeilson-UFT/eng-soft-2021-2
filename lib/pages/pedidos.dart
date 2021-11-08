@@ -14,22 +14,23 @@ class _PaginaPedidosState extends State<PaginaPedidos>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFFFFFF),
+      backgroundColor: const Color(0xFFFFFFFF),
       body: Column(
         children: [
           Container(
             width: double.infinity,
             height: 160,
             color: AppCores.cinza1,
-            child: Wrap(
-                alignment: WrapAlignment.center,
-                children: [
+            child: Wrap(alignment: WrapAlignment.center, children: const [
               Text(
                 'Pedidos',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
               ),
-              SizedBox(height: 60,),
-              PecaNovamenteCard()
+              SizedBox(height: 60),
+              PecaNovamenteCard(
+                quantidade: 1,
+                produto: 'Pizza G Calabresa C/Borda Mista',
+              )
             ]),
           ),
         ],

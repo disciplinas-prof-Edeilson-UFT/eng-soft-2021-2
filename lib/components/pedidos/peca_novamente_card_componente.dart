@@ -3,7 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
 class PecaNovamenteCard extends StatelessWidget {
-  const PecaNovamenteCard({Key? key}) : super(key: key);
+  final int quantidade;
+  final String produto;
+
+  const PecaNovamenteCard(
+      {Key? key, required this.quantidade, required this.produto})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +50,7 @@ class PecaNovamenteCard extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    child: const Text('1'),
+                    child:  Text(quantidade.toString()),
                     padding: const EdgeInsets.all(3),
                     decoration: BoxDecoration(
                         color: AppCores.cinza1,
@@ -59,7 +64,7 @@ class PecaNovamenteCard extends StatelessWidget {
                     width: 15,
                   ),
                   Text(
-                    'Pizza G Calabresa C/Borda Mista',
+                    produto,
                     style: TextStyle(color: AppCores.cinza5),
                   )
                 ],
