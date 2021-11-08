@@ -1,14 +1,21 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
 class CategoriaCard extends StatelessWidget {
   const CategoriaCard({Key? key}) : super(key: key);
 
-
   @override
-  Widget build(BuildContext context){
-    return CustomScrollView(physics: BouncingScrollPhysics(),slivers: [Text('teste')],) ;
+  Widget build(BuildContext context) {
+    return ListView(
+      padding: const EdgeInsets.all(8),
+      children: [
+        Container(
+          height: 50,
+          color: Colors.amber[600],
+          child: const Center(child: Text('Entry A')),
+        )
+      ],
+    );
+  
   }
-
 }

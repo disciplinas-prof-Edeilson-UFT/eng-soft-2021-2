@@ -18,7 +18,8 @@ class _PaginaInicioState extends State<PaginaInicio>
           Text(
             'inicio',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-          ),CategoriaCard()
+          ),
+          CategoriaCard()
         ],
       ),
     );
