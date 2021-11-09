@@ -73,7 +73,7 @@ class PecaNovamenteCard extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * 1,
                 height: 45,
                 decoration:
-                    const BoxDecoration(color: AppCores.vermelhoPrincipal),
+                    const BoxDecoration(color: AppCores.vermelhoPrincipal, borderRadius: BorderRadius.all(Radius.circular(5))),
                 child: const Center(
                     child: Text('Adicionar à sacola',
                         style: TextStyle(
