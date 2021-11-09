@@ -14,11 +14,9 @@ class _PaginaInicioState extends State<PaginaInicio>
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [
-          Text(
-            'inicio',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-          ),
+        children: const [
+          Text('inicio',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
           CategoriaCard()
         ],
       ),
