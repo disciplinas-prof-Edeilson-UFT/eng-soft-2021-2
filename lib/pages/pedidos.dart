@@ -35,7 +35,8 @@ class _PaginaPedidosState extends State<PaginaPedidos>
             ]),
           ),
           const SizedBox(height: 100),
-          const HistoricoCard()
+
+          const Expanded (child: HistoricoCard())
         ],
       ),
     );
