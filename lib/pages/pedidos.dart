@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:ifood_engenharia_de_software/components/pedidos/historico_componente.dart';
+import 'package:ifood_engenharia_de_software/components/pedidos/peca_novamente_card_componente.dart';
+import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
 class PaginaPedidos extends StatefulWidget {
   const PaginaPedidos({Key? key}) : super(key: key);
@@ -10,72 +13,31 @@ class PaginaPedidos extends StatefulWidget {
 class _PaginaPedidosState extends State<PaginaPedidos>
     with SingleTickerProviderStateMixin {
   @override
-  /*Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Text(
-        'Pedidos',
-        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-      ),
-    );
-  }
- */
-
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold (
-        appBar:AppBar(
-          title: Text("Meus Pedidos"),
-          backgroundColor: Colors.red,
-
-        ),
-        body: buildListView(),
-
+    return Scaffold(
+      backgroundColor: const Color(0xFFFFFFFF),
+      body: Column(
+        children: [
+          Container(
+            width: double.infinity,
+            height: 160,
+            color: AppCores.cinza1,
+            child: Wrap(alignment: WrapAlignment.center, children: const [
+              Text(
+                'Pedidos',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+              ),
+              SizedBox(height: 60),
+              PecaNovamenteCard(
+                quantidade: 1,
+                produto: 'Pizza G Calabresa C/Borda Mista',
+              )
+            ]),
+          ),
+          const SizedBox(height: 100),
+          const HistoricoCard()
+        ],
       ),
-
     );
-
   }
-
-
-  buildListView() {
-    return ListView(
-      children: <Widget> [
-
-        ListTile(
-          leading: Icon(Icons.add_location),
-          title: Text("Loja 01"),
-          subtitle: Text("Pedido 01\nNota: 09"),
-          trailing: Icon(Icons.add_shopping_cart),
-          onTap: (){
-
-          },
-        ),
-
-        ListTile(
-          leading: Icon(Icons.add_location),
-          title: Text("Loja 02"),
-          subtitle: Text("Pedido 02\nNota: 10"),
-          trailing: Icon(Icons.add_shopping_cart),
-          onTap: (){
-
-          },
-        ),
-
-        ListTile(
-          leading: Icon(Icons.add_location),
-          title: Text("Loja 03"),
-          subtitle: Text("Pedido 03\nNota: 02"),
-          trailing: Icon(Icons.add_shopping_cart),
-          onTap: (){
-
-          },
-        ),
-
-      ],
-    );
-
-  }
-
-
-
 }
