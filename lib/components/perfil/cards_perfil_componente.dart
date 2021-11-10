@@ -23,12 +23,6 @@ class OpcoesPerfil extends StatelessWidget {
           padding: const EdgeInsets.all(20),
           child: Column(
             children: [
-              /*Container(
-                child: Padding(
-                  padding: EdgeInsets.all(1),
-                  child: Icon(Icons.add_comment),
-                ),
-              ),*/
               Row(
                 children: [
                   Container(
@@ -39,7 +33,7 @@ class OpcoesPerfil extends StatelessWidget {
                   ),
                   Text(
                     nomeArea,
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal),
                   ),
                 ],
               ),
@@ -48,7 +42,7 @@ class OpcoesPerfil extends StatelessWidget {
                   Text(
                     descricao,
                     style: TextStyle(
-                        color: AppCores.preto,
+                        color: AppCores.cinza7,
                         letterSpacing: 2,
                     ),
                   )
