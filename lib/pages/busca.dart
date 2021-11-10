@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ifood_engenharia_de_software/components/busca/caixa_de_pesquisa.dart';
+import 'package:ifood_engenharia_de_software/components/busca/caixa_de_pesquisa_componente.dart';
 
 class PaginaBusca extends StatefulWidget {
   const PaginaBusca({Key? key}) : super(key: key);
