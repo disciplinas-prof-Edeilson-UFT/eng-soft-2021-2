@@ -40,6 +40,7 @@ class _PaginaPerfilState extends State<PaginaPerfil>
               descricao: 'Minhas fidelidades'
           ),
           OpcoesPerfil(
+            
               nomeArea: 'Favoritos',
               descricao: 'Meus locais favoritos'
           ),
