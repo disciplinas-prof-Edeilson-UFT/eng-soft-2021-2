@@ -6,9 +6,12 @@
 
  - [ ] R0 - Tela de início
 	 - [ ] T1 - Carrossel de categorias - Pablo
+	 - [ ] T2 - Filtros da Tela de Início - Enzo Lucas
  - [ ] R1 - Tela de busca
 	 - [ ] T1 - banners de categoria - Arthur
+	 - [ ] T2 - Caixa de pesquisa - Luana Lorena
  - [ ] R2 - Tela de pedidos
 	 - [x] T1 - Card peça de novo - Lindomar
 	 - [ ] T3 - Histórico de pedidos - Neudison
  - [ ] R3 - Tela de perfil
+ 	- [ ] T2 - Lista de opções parte inferior do perfil - Rafael
