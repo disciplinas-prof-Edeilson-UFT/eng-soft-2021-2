@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "809852743495",
+    "project_id": "eng-soft-2021-2",
+    "storage_bucket": "eng-soft-2021-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809852743495:android:fdaadca8b4595be717a662",
+        "android_client_info": {
+          "package_name": "com.edu.uft.ifood_engenharia_de_software"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809852743495-53jtrbql6fpled2sbs16o2l0an9e6l5b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.edu.uft.ifood_engenharia_de_software",
+            "certificate_hash": "a9b108a655fd42433ff950c25fc8717070f2a678"
+          }
+        },
+        {
+          "client_id": "809852743495-qouqfdlnc7kig93i4ffu9utg0tbfi23e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkLjMUyGhHwQu-kJgmUfMywo_Wki0z_NA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809852743495-qouqfdlnc7kig93i4ffu9utg0tbfi23e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
