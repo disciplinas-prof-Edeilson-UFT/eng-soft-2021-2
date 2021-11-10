@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:ifood_engenharia_de_software/components/perfil/abas_inferiores_do_perfil.dart';
+import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
 class PaginaPerfil extends StatefulWidget {
   const PaginaPerfil({Key? key}) : super(key: key);
@@ -7,15 +10,19 @@ class PaginaPerfil extends StatefulWidget {
   _PaginaPerfilState createState() => _PaginaPerfilState();
 }
 
-class _PaginaPerfilState extends State<PaginaPerfil>
-    with SingleTickerProviderStateMixin {
+class _PaginaPerfilState extends State<PaginaPerfil> {
   @override
   Widget build(BuildContext context) {
-    return  const Scaffold(
-      body: Text(
-        'Perfil',
-        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+    return Scaffold(
+      body: Column(
+        children: [
+          const Expanded (child: AbaInfCard())
+        ],
       ),
     );
+
   }
 }
+
+
+
