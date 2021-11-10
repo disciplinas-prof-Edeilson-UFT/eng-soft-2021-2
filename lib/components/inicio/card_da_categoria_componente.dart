@@ -2,11 +2,26 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
+
+class Categoria {
+
+  final String nome;
+  final Color cor;
+
+  const Categoria(this.nome, this.cor);
+
+
+}
+
 class CategoriaCard extends StatelessWidget {
 
-  final List categoryList;
 
-  const CategoriaCard({Key? key, required this.categoryList}) : super(key: key);
+
+  final List <Categoria>categoriaLista;
+
+
+
+  const CategoriaCard({Key? key, required this.categoriaLista}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +31,7 @@ class CategoriaCard extends StatelessWidget {
 
             scrollDirection: Axis.horizontal,
             physics: const BouncingScrollPhysics(), // this for snapping
-            itemCount: categoryList.length,
+            itemCount: categoriaLista.length,
             itemBuilder: (_, index) => SizedBox(
               width: MediaQuery.of(context).size.width * 0.3,
               child: Column(children: [
@@ -25,14 +40,14 @@ class CategoriaCard extends StatelessWidget {
                   height: 40,
                   width: 90,
                   padding: const EdgeInsets.all(50),
-                  decoration: const BoxDecoration(
-                      color: AppCores.vermelhoPrincipal,
+                  decoration: BoxDecoration(
+                      color: categoriaLista[index].cor,
                       borderRadius: BorderRadius.all(Radius.circular(8))),
                 ),
                 const SizedBox(height: 10),
 
                  Text(
-                  '${categoryList[index]}',
+                  categoriaLista[index].nome,
                   style: TextStyle(color: Color(0xff717171), fontSize: 14),
                 )
               ]),
