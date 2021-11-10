@@ -2,36 +2,41 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
-class PecaNovamenteCard extends StatelessWidget {
+class OpcoesPerfil extends StatelessWidget {
   final String nomeArea;
   final String descricao;
 
-  const PecaNovamenteCard(
+  const OpcoesPerfil(
       {Key? key, required this.nomeArea, required this.descricao})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return FractionallySizedBox(
-      widthFactor: .9,
+      widthFactor: 1,
       child: Container(
         decoration: BoxDecoration(
           color: AppCores.branco,
-          borderRadius: const BorderRadius.only(
-              topLeft: Radius.circular(10),
-              topRight: Radius.circular(10),
-              bottomLeft: Radius.circular(10),
-              bottomRight: Radius.circular(10)),
         ),
         height: 80,
         child: Container(
           padding: const EdgeInsets.all(20),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
+              /*Container(
+                child: Padding(
+                  padding: EdgeInsets.all(1),
+                  child: Icon(Icons.add_comment),
+                ),
+              ),*/
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children:  [
+                children: [
+                  Container(
+                    child: Padding(
+                      padding: EdgeInsets.all(0),
+                      child: Icon(Icons.add_comment),
+                    ),
+                  ),
                   Text(
                     nomeArea,
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -42,7 +47,10 @@ class PecaNovamenteCard extends StatelessWidget {
                 children: [
                   Text(
                     descricao,
-                    style: TextStyle(color: AppCores.preto),
+                    style: TextStyle(
+                        color: AppCores.preto,
+                        letterSpacing: 2,
+                    ),
                   )
                 ],
               ),

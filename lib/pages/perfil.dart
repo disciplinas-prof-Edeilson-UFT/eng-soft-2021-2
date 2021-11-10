@@ -15,10 +15,38 @@ class _PaginaPerfilState extends State<PaginaPerfil>
     return  Scaffold(
       body: ListView(
         children: [
-          PecaNovamenteCard(
+          OpcoesPerfil(
             nomeArea: 'Chats',
             descricao: 'Minhas Conversas',
-          )
+          ),
+          OpcoesPerfil(
+              nomeArea: 'Notificaçoes',
+              descricao: 'Minha central de notificações'
+          ),
+          OpcoesPerfil(
+              nomeArea: 'Carteira',
+              descricao: 'Meu saldo e QR code'
+          ),
+          OpcoesPerfil(
+              nomeArea: 'Clube iFood',
+              descricao: 'Meus pacotes de desconto'
+          ),
+          OpcoesPerfil(
+              nomeArea: 'Cupons',
+              descricao: 'Meus cupons de desconto'
+          ),
+          OpcoesPerfil(
+              nomeArea: 'Fidelidade',
+              descricao: 'Minhas fidelidades'
+          ),
+          OpcoesPerfil(
+              nomeArea: 'Favoritos',
+              descricao: 'Meus locais favoritos'
+          ),
+          OpcoesPerfil(
+              nomeArea: 'Formas de pagamento',
+              descricao: 'Minhas formas de pagamento'
+          ),
         ],
       ),
     );
