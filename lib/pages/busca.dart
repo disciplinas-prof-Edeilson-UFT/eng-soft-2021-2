@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ifood_engenharia_de_software/components/busca/caixa_de_pesquisa.dart';
 
 class PaginaBusca extends StatefulWidget {
   const PaginaBusca({Key? key}) : super(key: key);
@@ -10,12 +11,9 @@ class PaginaBusca extends StatefulWidget {
 class _PaginaBuscaState extends State<PaginaBusca>
     with SingleTickerProviderStateMixin {
   @override
-  Widget build(BuildContext context) {
-    return  const Scaffold(
-      body: Text(
-        'Busca',
-        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-      ),
+ Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(children: const [MecanismodeBusca()]),
     );
   }
 }
