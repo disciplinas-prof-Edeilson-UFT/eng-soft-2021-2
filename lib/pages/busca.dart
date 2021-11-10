@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ifood_engenharia_de_software/components/banners_de_categorias.dart';
+import 'package:ifood_engenharia_de_software/components/busca/banner_de_categoria.dart';
 class PaginaBusca extends StatefulWidget {
   const PaginaBusca({Key? key}) : super(key: key);
 
@@ -18,7 +18,7 @@ class _PaginaBuscaState extends State<PaginaBusca>
             'Busca',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
           ),
-          ListaBannersDeCategorias()
+          BannersDeCategorias()
         ]
       ),
     );
