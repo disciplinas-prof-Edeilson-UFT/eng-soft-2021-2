@@ -2,10 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
-class BannersDeCategorias extends StatelessWidget {
+class BannerDeCategorias extends StatelessWidget {
   final String categoria;
 
-  const BannersDeCategorias(
+  const BannerDeCategorias(
     {Key? key, required this.categoria}) 
     : super(key: key);
 
@@ -39,9 +39,9 @@ class BannersDeCategorias extends StatelessWidget {
  }
 }
 
-class ListaBannersDeCategorias extends StatelessWidget {
+class BannersDeCategorias extends StatelessWidget {
  
-  const ListaBannersDeCategorias(
+  const BannersDeCategorias(
     {Key? key,})
     : super(key: key);
   
@@ -54,25 +54,25 @@ class ListaBannersDeCategorias extends StatelessWidget {
             const SizedBox(width: 2),
             Column(
               children: const [
-                BannersDeCategorias(
+                BannerDeCategorias(
                   categoria:'Express',
                 ),
-                BannersDeCategorias(
+                BannerDeCategorias(
                   categoria:'Farmácia',
                 ),
-                BannersDeCategorias(
+                BannerDeCategorias(
                   categoria:'Brasileira',
                 ),
-                BannersDeCategorias(
+                BannerDeCategorias(
                  categoria:'Marmita',
                 ),
-                BannersDeCategorias(
+                BannerDeCategorias(
                   categoria:'Carnes',
                 ),
-                BannersDeCategorias(
+                BannerDeCategorias(
                   categoria:'Contemporânea',
                 ),
-                BannersDeCategorias(
+                BannerDeCategorias(
                   categoria:'Japonesa',
                 ) 
               ],
@@ -80,25 +80,25 @@ class ListaBannersDeCategorias extends StatelessWidget {
             const SizedBox(width: 17),
             Column(
               children: const [
-                BannersDeCategorias(
+                BannerDeCategorias(
                   categoria:'Mercado',
                 ),
-                BannersDeCategorias(
+                BannerDeCategorias(
                   categoria:'Bebidas',
                 ),
-                BannersDeCategorias(
+                BannerDeCategorias(
                   categoria:'Saudável',
                 ),
-                BannersDeCategorias(
+                BannerDeCategorias(
                   categoria:'Lanches',
                 ),
-                BannersDeCategorias(
+                BannerDeCategorias(
                   categoria:'Italianos',
                 ),
-                BannersDeCategorias(
+                BannerDeCategorias(
                   categoria:'Pizza',
                 ),
-                BannersDeCategorias(
+                BannerDeCategorias(
                   categoria:'Poke',
                 )
                 ]
@@ -108,4 +108,3 @@ class ListaBannersDeCategorias extends StatelessWidget {
     );
   }
 }
-   
