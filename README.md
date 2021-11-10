@@ -13,5 +13,7 @@
  - [ ] R2 - Tela de pedidos
 	 - [x] T1 - Card peça de novo - Lindomar
 	 - [x] T3 - Histórico de pedidos - Neudison
- - [ ] R3 - Tela de perfil
+- [ ] R3 - Tela de perfil
  	- [ ] T2 - Lista de opções parte inferior do perfil - Rafael
+- [ ] R4 - Firebase
+	- [ ] T1 - Preparando o ambiente(Firestore) - Marcos Gilmário
