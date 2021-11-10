@@ -13,30 +13,31 @@ class _MecanismodeBusca extends State<MecanismodeBusca> {
     return Center(
       child: SafeArea(
         child: Padding(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           child: Column(
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.only(top: 10),
+                padding:const EdgeInsets.only(top: 10),
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     color: Colors.grey[100],
                   ),
                   child: TextField(
-                    style: TextStyle(fontSize: 18, color: Colors.black),
+                    style: const TextStyle(fontSize: 18, color: Colors.black),
                     decoration: InputDecoration(
-                        contentPadding: EdgeInsets.only(
+                        contentPadding: const EdgeInsets.only(
                             left: 20, top: 15, right: 20, bottom: 15),
                         prefixIcon: Padding(
-                          padding: EdgeInsets.only(left: 15, right: 15),
+                          padding: const EdgeInsets.only(left: 15, right: 15),
                           child: Icon(
                             Icons.search,
                             color: Colors.redAccent[700],
                           ),
                         ),
                         hintText: 'Item ou loja',
-                        hintStyle: TextStyle(fontSize: 18, color: Colors.grey),
+                        hintStyle:
+                            const TextStyle(fontSize: 18, color: Colors.grey),
                         border: InputBorder.none),
                   ),
                 ),
