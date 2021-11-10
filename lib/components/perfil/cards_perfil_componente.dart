@@ -41,6 +41,7 @@ class OpcoesPerfil extends StatelessWidget {
                 children: [
                   Text(
                     descricao,
+
                     style: TextStyle(
                         color: AppCores.cinza7,
                         letterSpacing: 2,
