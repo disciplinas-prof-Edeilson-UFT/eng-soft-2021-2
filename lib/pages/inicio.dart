@@ -19,12 +19,12 @@ class _PaginaInicioState extends State<PaginaInicio>
           Text('inicio',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
           CategoriaCard(categoriaLista: [
-            Categoria('pizza', AppCores.vermelhoPrincipal),
-            Categoria('promocoes', Color(0xff11fa00)),
-            Categoria('vale alimentacao', Color(0xfcc504fa)),
-            Categoria('hamburguer', Color(0xffe79b02)),
-            Categoria('sorvete', Color(0xfffa4700)),
-            Categoria('doces', Color(0xff060afc)),
+            Categoria('Pizza', AppCores.vermelhoPrincipal),
+            Categoria('Mercado', Color(0xffb5cf47)),
+            Categoria('Vale Alimentacao', Color(0xffA553BE)),
+            Categoria('Sorvete', Color(0xffF8879B)),
+            Categoria('Hamburguer', Color(0xffA553BE)),
+            Categoria('Doces', Color(0xffF8879B)),
 
           ]
            )

@@ -42,13 +42,13 @@ class CategoriaCard extends StatelessWidget {
                   padding: const EdgeInsets.all(50),
                   decoration: BoxDecoration(
                       color: categoriaLista[index].cor,
-                      borderRadius: BorderRadius.all(Radius.circular(8))),
+                      borderRadius: const BorderRadius.all(Radius.circular(8))),
                 ),
                 const SizedBox(height: 10),
 
-                 Text(
+                Text(
                   categoriaLista[index].nome,
-                  style: TextStyle(color: Color(0xff717171), fontSize: 14),
+                  style: const TextStyle(color: Color(0xff717171), fontSize: 14),
                 )
               ]),
             )));
