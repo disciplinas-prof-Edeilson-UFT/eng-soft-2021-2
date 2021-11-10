@@ -17,9 +17,7 @@ class _PaginaInicioState extends State<PaginaInicio>
         children: const [
           Text('inicio',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
-          CategoriaCard(
-            Categorias: ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','s'],
-          )
+          CategoriaCard()
         ],
       ),
     );

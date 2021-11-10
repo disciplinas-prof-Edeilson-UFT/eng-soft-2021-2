@@ -4,16 +4,16 @@ import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
 class CategoriaCard extends StatelessWidget {
 
-  List<String>Categorias =[];
+  get itens => List <String>.generate(15,(i)=>"item $i");
 
-
-  CategoriaCard({Key? key, required this.Categorias}) : super(key: key);
+  const CategoriaCard({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
         height: 200,
         child: ListView.builder(
+
             scrollDirection: Axis.horizontal,
             physics: const BouncingScrollPhysics(), // this for snapping
             itemCount: 15,
@@ -30,8 +30,9 @@ class CategoriaCard extends StatelessWidget {
                       borderRadius: BorderRadius.all(Radius.circular(8))),
                 ),
                 const SizedBox(height: 10),
-                const Text(
-                  Categorias,
+
+                 Text(
+                  '${itens[index]}',
                   style: TextStyle(color: Color(0xff717171), fontSize: 14),
                 )
               ]),
