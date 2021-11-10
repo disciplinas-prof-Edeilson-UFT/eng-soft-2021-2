@@ -25,9 +25,7 @@ class _PaginaInicioState extends State<PaginaInicio>
             Categoria('Sorvete', Color(0xffF8879B)),
             Categoria('Hamburguer', Color(0xffA553BE)),
             Categoria('Doces', Color(0xffF8879B)),
-
-          ]
-           )
+          ])
         ],
       ),
     );
