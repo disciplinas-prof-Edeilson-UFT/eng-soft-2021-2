@@ -12,6 +12,6 @@
 	 - [ ] T2 - Caixa de pesquisa - Luana Lorena
  - [ ] R2 - Tela de pedidos
 	 - [x] T1 - Card peça de novo - Lindomar
-	 - [ ] T3 - Histórico de pedidos - Neudison
+	 - [x] T3 - Histórico de pedidos - Neudison
  - [ ] R3 - Tela de perfil
  	- [ ] T2 - Lista de opções parte inferior do perfil - Rafael
