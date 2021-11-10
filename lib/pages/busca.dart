@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:ifood_engenharia_de_software/components/banners_de_categorias.dart';
 class PaginaBusca extends StatefulWidget {
   const PaginaBusca({Key? key}) : super(key: key);
 
@@ -11,10 +11,15 @@ class _PaginaBuscaState extends State<PaginaBusca>
     with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
-    return  const Scaffold(
-      body: Text(
-        'Busca',
-        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+    return  Scaffold(
+      body: Column(
+        children: const[ 
+          Text(
+            'Busca',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+          ),
+          ListaBannersDeCategorias()
+        ]
       ),
     );
   }
