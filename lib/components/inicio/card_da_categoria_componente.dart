@@ -4,9 +4,9 @@ import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
 class CategoriaCard extends StatelessWidget {
 
-  get itens => List <String>.generate(15,(i)=>"item $i");
+  final List categoryList;
 
-  const CategoriaCard({Key? key}) : super(key: key);
+  const CategoriaCard({Key? key, required this.categoryList}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class CategoriaCard extends StatelessWidget {
 
             scrollDirection: Axis.horizontal,
             physics: const BouncingScrollPhysics(), // this for snapping
-            itemCount: 15,
+            itemCount: categoryList.length,
             itemBuilder: (_, index) => SizedBox(
               width: MediaQuery.of(context).size.width * 0.3,
               child: Column(children: [
@@ -32,7 +32,7 @@ class CategoriaCard extends StatelessWidget {
                 const SizedBox(height: 10),
 
                  Text(
-                  '${itens[index]}',
+                  '${categoryList[index]}',
                   style: TextStyle(color: Color(0xff717171), fontSize: 14),
                 )
               ]),
