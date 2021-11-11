@@ -2,7 +2,7 @@
 
 ## Etapa de desenvolvimento
 
-### Semana 1
+### Semana 1 - 04/11/2021 - 11/11/2021
 
  - [ ] R0 - Tela de início
 	 - [x] T1 - Carrossel de categorias - Pablo
