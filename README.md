@@ -21,4 +21,4 @@
  	- [x] T2 - Lista de opções parte inferior do perfil - Rafael
  	- [x] T3 - Cabecalho - Vinicius de Oliveira
 - [ ] R4 - Firebase
-	- [ ] T1 - Preparando o ambiente(Firestore) - Marcos Gilmário
+	- [x] T1 - Preparando o ambiente(Firestore) - Marcos Gilmário
