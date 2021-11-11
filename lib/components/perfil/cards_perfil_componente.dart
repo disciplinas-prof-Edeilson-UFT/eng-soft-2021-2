@@ -1,62 +1,81 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-import 'package:ifood_engenharia_de_software/utilities/cores.dart';
+
+class Opcoes{
+  final String nomeArea;
+  final String desc;
+  final Icon icon;
+
+  const Opcoes(this.nomeArea,this.desc, this.icon);
+}
 
 class OpcoesPerfil extends StatelessWidget {
-  final String nomeArea;
-  final String descricao;
+  final List<Opcoes> opcoespefils;
 
-  const OpcoesPerfil(
-      {Key? key, required this.nomeArea, required this.descricao})
-      : super(key: key);
+  const OpcoesPerfil({Key? key, required this.opcoespefils}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return FractionallySizedBox(
-      widthFactor: 1,
-      child: Container(
-        decoration: BoxDecoration(
-          color: AppCores.branco,
-        ),
-        height: 85,
-        child: Container(
-          padding: const EdgeInsets.all(20),
-          child: Column(
-            children: [
-              Row(
-                children: [
-                  Padding(
-                      padding: EdgeInsets.only(top: 0, left: 20, bottom: 0),
-                    child: Text(
-                      nomeArea,
-                      style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black54
+    return Scaffold(
+      body: Column(
+        children: [
+          ListView.builder(
+              shrinkWrap: true,
+              scrollDirection: Axis.vertical,
+              itemCount: opcoespefils.length,
+              itemBuilder: (BuildContext context, int index) {
+                return Container(
+                  width: MediaQuery.of(context).size.width,
+                  alignment: Alignment.bottomLeft,
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 16.0, right: 15.0),
+                    child: Container(
+                      child: Row(
+                        children: <Widget>[
+                          opcoespefils[index].icon,
+                          Padding(
+                            padding: const EdgeInsets.only(left: 13.0),
+                            child: Text(
+                              opcoespefils[index].nomeArea + "\n\n",
+                              style: const TextStyle(
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 20,
+                                  color: Colors.black87),
+                            ),
+                          ),
+                          Row(
+                            children: <Widget> [
+                              Padding(
+                                  padding: const EdgeInsets.only(left: 2),
+                                  child: Text(
+                                    opcoespefils[index].desc,
+                                    style: const TextStyle(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 15,
+                                        color: Colors.black54),
+                                  ),
+                              ),
+                            ],
+                          ),
+                          const Spacer(),
+                          const Icon(Icons.arrow_forward_ios_sharp,
+                              color: Colors.black38, size: 19),
+                        ],
                       ),
+                      decoration: const BoxDecoration(
+                          border: Border(
+                            bottom: BorderSide(
+                              color: Colors.black12,
+                              width: 0.6,
+                            ),
+                          )),
+                      padding: const EdgeInsets.only(bottom: 10, top: 10),
                     ),
                   ),
-                ],
-              ),
-              Row(
-                children: [
-                  Padding(
-                      padding: EdgeInsets.only(top: 0, left: 60, bottom: 0),
-                    child: Text(
-                      descricao,
-                      style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.normal,
-                          color: Colors.black45,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
+                );
+            }),
+        ],
       ),
     );
   }
