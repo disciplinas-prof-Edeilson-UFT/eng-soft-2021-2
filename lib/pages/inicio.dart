@@ -12,13 +12,21 @@ class _PaginaInicioState extends State<PaginaInicio>
     with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
-  return Scaffold(
+    return Scaffold(
         body: Column(children: const [
       Text(
         'Início',
         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
       ),
-      Expanded(child: UltimasLojasRestaurante(listalojas: ['Loja exemplo1', 'Loja exemplo2', 'Loja exemplo3', 'Loja exemplo4'],))
+      Expanded(
+          child: UltimasLojasRestaurante(
+        listalojas: [
+          'Loja exemplo1',
+          'Loja exemplo2',
+          'Loja exemplo3',
+          'Loja exemplo4'
+        ],
+      ))
     ]));
   }
 }

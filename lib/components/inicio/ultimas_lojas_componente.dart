@@ -4,6 +4,7 @@ import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
 class UltimasLojasRestaurante extends StatelessWidget {
   final List<String> listalojas;
+
   const UltimasLojasRestaurante({Key? key, required this.listalojas})
       : super(key: key);
 
@@ -11,14 +12,14 @@ class UltimasLojasRestaurante extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(children: <Widget>[
       const Align(
-            alignment: Alignment.topLeft,
-            child: Padding(
-              padding: EdgeInsets.only(left: 15.0),
-              child: Text(
-                'Últimas lojas',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-              ),
-            )),
+          alignment: Alignment.topLeft,
+          child: Padding(
+            padding: EdgeInsets.only(left: 15.0),
+            child: Text(
+              'Últimas lojas',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+            ),
+          )),
       Expanded(
           child: ListView.builder(
               shrinkWrap: true,
