@@ -19,39 +19,39 @@ class OpcoesPerfil extends StatelessWidget {
         decoration: BoxDecoration(
           color: AppCores.branco,
         ),
-        height: 80,
+        height: 90,
         child: Container(
           padding: const EdgeInsets.all(20),
           child: Column(
             children: [
               Row(
                 children: [
-                  Container(
-                    child: Padding(
-                      padding: EdgeInsets.all(0),
-                      child: Icon(
-                        Icons.chat_outlined,
+                  Padding(
+                      padding: EdgeInsets.only(top: 0, left: 20, bottom: 0),
+                    child: Text(
+                      nomeArea,
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black54
                       ),
-                    ),
-                  ),
-                  Text(
-                    nomeArea,
-                    style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.normal
                     ),
                   ),
                 ],
               ),
               Row(
                 children: [
-                  Text(
-                    descricao,
-                    style: TextStyle(
-                        color: AppCores.cinza7,
-                        letterSpacing: 2,
+                  Padding(
+                      padding: EdgeInsets.only(top: 0, left: 40, bottom: 0),
+                    child: Text(
+                      descricao,
+                      style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.normal,
+                          color: Colors.black45,
+                      ),
                     ),
-                  )
+                  ),
                 ],
               ),
             ],
