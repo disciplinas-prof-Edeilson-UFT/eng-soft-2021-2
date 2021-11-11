@@ -19,7 +19,7 @@ class OpcoesPerfil extends StatelessWidget {
         decoration: BoxDecoration(
           color: AppCores.branco,
         ),
-        height: 90,
+        height: 85,
         child: Container(
           padding: const EdgeInsets.all(20),
           child: Column(
@@ -42,7 +42,7 @@ class OpcoesPerfil extends StatelessWidget {
               Row(
                 children: [
                   Padding(
-                      padding: EdgeInsets.only(top: 0, left: 40, bottom: 0),
+                      padding: EdgeInsets.only(top: 0, left: 60, bottom: 0),
                     child: Text(
                       descricao,
                       style: TextStyle(
