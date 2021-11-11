@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/components/inicio/card_da_categoria_componente.dart';
-import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 import 'package:ifood_engenharia_de_software/components/inicio/menu_de_redirecionamento.dart';
+import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
 class PaginaInicio extends StatefulWidget {
   const PaginaInicio({Key? key}) : super(key: key);
