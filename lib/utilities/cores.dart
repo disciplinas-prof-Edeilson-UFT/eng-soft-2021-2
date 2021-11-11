@@ -12,3 +12,5 @@ class AppCores {
   static Color? cinza2 = Colors.grey[200];
   static Color? cinza1 = Colors.grey[100];
 }
+
+

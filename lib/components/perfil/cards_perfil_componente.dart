@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
 class OpcoesPerfil extends StatelessWidget {
@@ -28,12 +29,17 @@ class OpcoesPerfil extends StatelessWidget {
                   Container(
                     child: Padding(
                       padding: EdgeInsets.all(0),
-                      child: Icon(Icons.add_comment),
+                      child: Icon(
+                        Icons.chat_outlined,
+                      ),
                     ),
                   ),
                   Text(
                     nomeArea,
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal),
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.normal
+                    ),
                   ),
                 ],
               ),
@@ -41,7 +47,6 @@ class OpcoesPerfil extends StatelessWidget {
                 children: [
                   Text(
                     descricao,
-
                     style: TextStyle(
                         color: AppCores.cinza7,
                         letterSpacing: 2,
