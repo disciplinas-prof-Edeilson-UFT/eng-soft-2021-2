@@ -42,35 +42,3 @@ class BannersDeCategorias extends StatelessWidget {
         });
   }
 }
-
-/*
-return ListView.builder(
-      shrinkWrap: true,
-      itemCount: listacategoria.length,
-      itemBuilder:(BuildContext context, int index){
-          return Column(
-            children:[
-              const SizedBox(width: 4),
-              Column(
-                children:  [
-                  ElevatedButton(
-                    style: style,
-                    onPressed: () {},
-                    child: Column(
-                      children: [
-                        const SizedBox(height: 15),
-                        Row(
-                         children: [
-                          Text(listacategoria[index].nome)
-                         ],
-                        )
-                      ]
-                    )
-                  )
-                ]
-              ),
-            ]
-         );
-      }
-    );
-*/
