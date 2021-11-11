@@ -16,30 +16,16 @@ class _PaginaPerfilState extends State<PaginaPerfil>
   Widget build(BuildContext context) {
     return Scaffold(
         body: Column(children: const [
-          TopoPagina(),
+      Expanded(child: TopoPagina()),
       Expanded(
           child: AbaInfCard(
         listaabas: [
-          Aba(
-            "Ajuda",
-            Icon(Icons.help_outline, color: Colors.black38,),
-          ),
-          Aba(
-            "Configurações",
-            Icon(Icons.settings, color: Colors.black38),
-          ),
-          Aba(
-            "Segurança",
-            Icon(Icons.security, color: Colors.black38,),
-          ),
-          Aba(
-            "Usar no carro",
-            Icon(Icons.qr_code, color: Colors.black38,),
-          ),
-          Aba(
-            "Sugerir restaurantes",
-            Icon(Icons.add_business_outlined, color: Colors.black38,),
-          ),
+          Aba("Ajuda", Icon(Icons.help_outline, color: Colors.black38)),
+          Aba("Configurações", Icon(Icons.settings, color: Colors.black38)),
+          Aba("Segurança", Icon(Icons.security, color: Colors.black38)),
+          Aba("Usar no carro", Icon(Icons.qr_code, color: Colors.black38)),
+          Aba("Sugerir restaurantes",
+              Icon(Icons.add_business_outlined, color: Colors.black38)),
         ],
       ))
     ]));

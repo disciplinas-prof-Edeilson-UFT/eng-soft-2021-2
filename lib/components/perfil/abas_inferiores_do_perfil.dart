@@ -1,15 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
 class Aba {
   final String nomeaba;
   final Icon icon;
+
   const Aba(this.nomeaba, this.icon);
 }
 
 class AbaInfCard extends StatelessWidget {
   final List<Aba> listaabas;
+
   const AbaInfCard({Key? key, required this.listaabas}) : super(key: key);
 
   @override
