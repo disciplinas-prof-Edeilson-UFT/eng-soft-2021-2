@@ -12,23 +12,25 @@ class _PaginaBuscaState extends State<PaginaBusca>
     with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      body: Column(
-        children: const[ 
-          Text(
-            'Busca',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-          ),
-          Align(
+    return Scaffold(
+      body: Column(children: const [
+        Text(
+          'Busca',
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+        ),
+        Align(
             alignment: Alignment.center,
             child: SizedBox(
-               width:340,
-               child: 
-                  BannersDeCategorias(listacategoria: [Categoria('express'),Categoria('Mercado'),Categoria('Farmácia'),Categoria('Bebidas'),Categoria('Pizza'),Categoria('Lanches')])
-            )
-          )
-        ]
-      ),
+                width: 340,
+                child: BannersDeCategorias(listacategoria: [
+                  Categoria('express'),
+                  Categoria('Mercado'),
+                  Categoria('Farmácia'),
+                  Categoria('Bebidas'),
+                  Categoria('Pizza'),
+                  Categoria('Lanches')
+                ])))
+      ]),
     );
   }
-}     
+}
