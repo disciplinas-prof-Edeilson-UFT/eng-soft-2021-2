@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ifood_engenharia_de_software/components/perfil/cabecalho_perfil_components.dart';
 
 class PaginaPerfil extends StatefulWidget {
   const PaginaPerfil({Key? key}) : super(key: key);
@@ -11,11 +12,6 @@ class _PaginaPerfilState extends State<PaginaPerfil>
     with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
-    return  const Scaffold(
-      body: Text(
-        'Perfil',
-        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-      ),
-    );
+    return TopoPagina();
   }
 }
