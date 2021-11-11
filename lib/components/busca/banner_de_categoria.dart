@@ -21,10 +21,41 @@ class BannersDeCategorias extends StatelessWidget {
   Widget build(BuildContext context) {
     
     final ButtonStyle style =
-    ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold), fixedSize: const Size(195, 70), primary: AppCores.vermelhoPrincipal );
+    ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold), fixedSize: const Size(175, 70), primary: AppCores.vermelhoPrincipal );
     
-    
-    return ListView.builder(
+    return GridView.builder(
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+      crossAxisCount: 2,
+      childAspectRatio: (4 / 2),
+      crossAxisSpacing: 20,
+      mainAxisSpacing: 20),
+      shrinkWrap: true,
+      itemCount: listacategoria.length,
+      itemBuilder: (BuildContext context, index) {
+      return ElevatedButton(
+        style: style,
+        onPressed: () {},
+        child: Column(
+          children: [
+            const SizedBox(height: 15),
+            Row(
+              children: [
+                Text(listacategoria[index].nome)
+              ],
+            )
+          ]
+        )
+      );
+      } 
+    );                   
+  }
+}
+
+
+
+
+/*
+return ListView.builder(
       shrinkWrap: true,
       itemCount: listacategoria.length,
       itemBuilder:(BuildContext context, int index){
@@ -53,5 +84,4 @@ class BannersDeCategorias extends StatelessWidget {
          );
       }
     );
-  }
-}
+*/
