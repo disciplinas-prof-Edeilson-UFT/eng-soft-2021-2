@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ifood_engenharia_de_software/components/pedidos/historico_componente.dart';
 import 'package:ifood_engenharia_de_software/components/pedidos/peca_novamente_card_componente.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
@@ -33,6 +34,9 @@ class _PaginaPedidosState extends State<PaginaPedidos>
               )
             ]),
           ),
+          const SizedBox(height: 100),
+
+          const Expanded (child: HistoricoCard())
         ],
       ),
     );

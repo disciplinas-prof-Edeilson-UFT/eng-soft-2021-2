@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:ifood_engenharia_de_software/components/perfil/abas_inferiores_do_perfil.dart';
+import 'package:ifood_engenharia_de_software/components/perfil/cabecalho_perfil_components.dart';
 
 class PaginaPerfil extends StatefulWidget {
   const PaginaPerfil({Key? key}) : super(key: key);
@@ -15,8 +16,7 @@ class _PaginaPerfilState extends State<PaginaPerfil>
   Widget build(BuildContext context) {
     return Scaffold(
         body: Column(children: const [
-      Text('Perfil',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
+          TopoPagina(),
       Expanded(
           child: AbaInfCard(
         listaabas: [
