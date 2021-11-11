@@ -5,11 +5,11 @@
 ### Semana 1
 
  - [ ] R0 - Tela de início
-	 - [ ] T1 - Carrossel de categorias - Pablo
+	 - [x] T1 - Carrossel de categorias - Pablo
 	 - [ ] T2 - Filtros da Tela de Início - Enzo Lucas
  - [ ] R1 - Tela de busca
 	 - [ ] T1 - banners de categoria - Arthur
-	 - [ ] T2 - Caixa de pesquisa - Luana Lorena
+	 - [x] T2 - Caixa de pesquisa - Luana Lorena
  - [ ] R2 - Tela de pedidos
 	 - [x] T1 - Card peça de novo - Lindomar
 	 - [x] T3 - Histórico de pedidos - Neudison
