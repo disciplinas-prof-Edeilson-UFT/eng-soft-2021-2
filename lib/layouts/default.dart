@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/app_store.dart';
-import 'package:ifood_engenharia_de_software/components/layout_default/navegacao_rodape_component.dart';
+import 'package:ifood_engenharia_de_software/components/layout_default/navegacao_rodape_componente.dart';
 import 'package:ifood_engenharia_de_software/pages/busca.dart';
 import 'package:ifood_engenharia_de_software/pages/inicio.dart';
 import 'package:ifood_engenharia_de_software/pages/pedidos.dart';

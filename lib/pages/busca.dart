@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ifood_engenharia_de_software/components/busca/banner_de_categoria.dart';
+import 'package:ifood_engenharia_de_software/components/busca/banner_de_categoria_componente.dart';
 import 'package:ifood_engenharia_de_software/components/busca/caixa_de_pesquisa_componente.dart';
 
 class PaginaBusca extends StatefulWidget {

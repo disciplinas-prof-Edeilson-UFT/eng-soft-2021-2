@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:ifood_engenharia_de_software/components/perfil/abas_inferiores_do_perfil.dart';
-import 'package:ifood_engenharia_de_software/components/perfil/cabecalho_perfil_components.dart';
+import 'package:ifood_engenharia_de_software/components/perfil/abas_inferiores_do_perfil_componente.dart';
+import 'package:ifood_engenharia_de_software/components/perfil/cabecalho_perfil_componente.dart';
 
 class PaginaPerfil extends StatefulWidget {
   const PaginaPerfil({Key? key}) : super(key: key);
