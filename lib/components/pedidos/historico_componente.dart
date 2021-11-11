@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 // classe para simular dados dinâmicos na lista
 class HistoricFakeData {
   late int id;
@@ -61,7 +60,7 @@ class HistoricoCard extends StatelessWidget {
       ]),
       // expande pra preencher o espaço
       Expanded(
-        // cria uma lista de acordo com a lista dinâmica histories
+          // cria uma lista de acordo com a lista dinâmica histories
           child: ListView.builder(
               padding: const EdgeInsets.all(8),
               // tamanho da lista vai ser de acordo com a lista dinâmica
@@ -110,7 +109,7 @@ class HistoricoCard extends StatelessWidget {
                                       int indexItems) {
                                     return Container(
                                         margin:
-                                        const EdgeInsets.only(right: 10.0),
+                                            const EdgeInsets.only(right: 10.0),
                                         child: Text(histories[index]
                                             .items[indexItems]));
                                   },
@@ -143,4 +142,3 @@ class HistoricoCard extends StatelessWidget {
     ]);
   }
 }
-
