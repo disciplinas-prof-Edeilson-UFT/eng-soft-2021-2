@@ -18,7 +18,7 @@
 	 - [x] T3 - Histórico de pedidos - Neudison
 - [ ] R3 - Tela de perfil
 	- [ ] T1 - Lista de botões do perfil - Murilo Alves
- 	- [ ] T2 - Lista de opções parte inferior do perfil - Rafael
+ 	- [x] T2 - Lista de opções parte inferior do perfil - Rafael
  	- [x] T3 - Cabecalho - Vinicius de Oliveira
 - [ ] R4 - Firebase
 	- [ ] T1 - Preparando o ambiente(Firestore) - Marcos Gilmário
