@@ -10,33 +10,38 @@ class PaginaPerfil extends StatefulWidget {
 }
 
 class _PaginaPerfilState extends State<PaginaPerfil>
-    with SingleTickerProviderStateMixin{
+    with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Container(
-            child: Wrap(alignment: WrapAlignment.center, children: const [
-              Text(
-                'Perfil',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-              ),
-            ]),
+        body: Column(children: const [
+      Text('Perfil',
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
+      Expanded(
+          child: AbaInfCard(
+        listaabas: [
+          Aba(
+            "Ajuda",
+            Icon(Icons.help_outline, color: Colors.black38,),
           ),
-          const Expanded (child: AbaInfCard())
+          Aba(
+            "Configurações",
+            Icon(Icons.settings, color: Colors.black38),
+          ),
+          Aba(
+            "Segurança",
+            Icon(Icons.security, color: Colors.black38,),
+          ),
+          Aba(
+            "Usar no carro",
+            Icon(Icons.qr_code, color: Colors.black38,),
+          ),
+          Aba(
+            "Sugerir restaurantes",
+            Icon(Icons.add_business_outlined, color: Colors.black38,),
+          ),
         ],
-      ),
-      //body: Column(
-
-        //children: const [
-        //],
-      //),
-    );
-
+      ))
+    ]));
   }
 }
-
-
-
-
