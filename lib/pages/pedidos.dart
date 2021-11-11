@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/components/pedidos/historico_componente.dart';
 import 'package:ifood_engenharia_de_software/components/pedidos/peca_novamente_card_componente.dart';
+import 'package:ifood_engenharia_de_software/components/pedidos/card_mais_pedidos_por_voce.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
+
 
 class PaginaPedidos extends StatefulWidget {
   const PaginaPedidos({Key? key}) : super(key: key);
@@ -36,9 +38,18 @@ class _PaginaPedidosState extends State<PaginaPedidos>
           ),
           const SizedBox(height: 100),
 
+          MaispedidosCard(maisPedidosLista: [
+            Maispedidos('Mama Mia'),
+            Maispedidos('Espeto de Ouro'),
+            Maispedidos('3 Corações'),
+            Maispedidos('Giraffas'),
+            Maispedidos('1001 Noites'),
+          ]),
+
           const Expanded (child: HistoricoCard())
         ],
       ),
     );
   }
 }
+
