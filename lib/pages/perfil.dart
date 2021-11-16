@@ -13,7 +13,6 @@ class _PaginaPerfilState extends State<PaginaPerfil>
     with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
-    return  CardConvidar();
-    );
+    return CardConvidar();
   }
 }

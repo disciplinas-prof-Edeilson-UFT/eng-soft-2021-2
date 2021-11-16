@@ -10,62 +10,56 @@ class CardConvidar extends StatefulWidget {
 class _CardConvidarState extends State<CardConvidar> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ListView.builder(
-        itemCount: 1,
-        shrinkWrap: true,
-        itemBuilder: (BuildContext context, int index) => Container(
-          width: MediaQuery.of(context).size.width,
-          padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
-          child: Card(
-            elevation: 5.0,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(5.0),
+    return FractionallySizedBox(
+      child: Container(
+        margin: const EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(6.0),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 1,
+              blurRadius: 3,
             ),
-            child: Container(
-              width: MediaQuery.of(context).size.width,
-              padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.start,
+          ],
+        ),
+        height: 75,
+        child: Container(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Row(
+                children: [
+                  Container(
+                    width: 30.0,
+                    color: Colors.white,
+                    child: Image.network(
+                        'https://cdn-icons-png.flaticon.com/512/1140/1140033.png'),
+                  ),
+                  SizedBox(width: 10.0),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Container(
-                        width: 30.0,
-                        height: 30.0,
-                        color: Colors.white,
-                        child: CircleAvatar(
-                          backgroundImage: NetworkImage(
-                              "https://cdn-icons-png.flaticon.com/512/1140/1140033.png"),
-                        ),
-                      ),
-                      SizedBox(width: 10.0),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Text('Ganhe R10 indicando o iFood',
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 13.0,
-                                  fontWeight: FontWeight.w600)),
-                          Text('Convide seus amigos',
-                              style: TextStyle(
-                                  color: Colors.grey, fontSize: 11.0)),
-                        ],
-                      )
+                      Text('Ganhe R\$ 10 indicando o iFood',
+                          style: TextStyle(
+                              color: Colors.black87,
+                              fontSize: 14.0,
+                              fontWeight: FontWeight.w600)),
+                      Text('Convide seus amigos',
+                          style: TextStyle(
+                              color: Colors.grey[600], fontSize: 13.0)),
                     ],
                   ),
-                  Container(
-                    alignment: Alignment.center,
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
+                  SizedBox(width: 40.0),
+                  const Icon(
+                    Icons.chevron_right_outlined,
+                    color: Colors.grey,
                   ),
                 ],
               ),
-            ),
+            ],
           ),
         ),
       ),
