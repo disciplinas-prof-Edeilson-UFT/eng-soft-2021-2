@@ -2,6 +2,10 @@
 
 ## Etapa de desenvolvimento
 
+### Semana 2
+ - [ ] R2 - Tela de pedidos
+	 - [x] T4 - state, model e action do R2/T1 - Lindomar Rodrigues
+
 ### Semana 1
 
  - [ ] R0 - Tela de início
