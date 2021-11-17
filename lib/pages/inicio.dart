@@ -21,12 +21,12 @@ class _PaginaInicioState extends State<PaginaInicio>
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
         Menu(),
         CategoriaCard(categoriaLista: [
-          Categoria('Pizza', AppCores.vermelhoPrincipal),
-          Categoria('Mercado', Color(0xffb5cf47)),
-          Categoria('Vale Alimentacao', Color(0xffA553BE)),
-          Categoria('Sorvete', Color(0xffF8879B)),
-          Categoria('Hamburguer', Color(0xffA553BE)),
-          Categoria('Doces', Color(0xffF8879B))
+          Categoria('Pizza', AppCores.vermelhoPrincipal, 'https://aguardando.fase.de.utilizar.o.storage/'),
+          Categoria('Mercado', Color(0xffb5cf47), 'https://aguardando.fase.de.utilizar.o.storage/'),
+          Categoria('Vale Alimentacao', Color(0xffA553BE), 'https://aguardando.fase.de.utilizar.o.storage/'),
+          Categoria('Sorvete', Color(0xffF8879B), 'https://aguardando.fase.de.utilizar.o.storage/'),
+          Categoria('Hamburguer', Color(0xffA553BE), 'https://aguardando.fase.de.utilizar.o.storage/'),
+          Categoria('Doces', Color(0xffF8879B), 'https://aguardando.fase.de.utilizar.o.storage/')
         ]),
         Expanded(
             child: UltimasLojasRestaurante(

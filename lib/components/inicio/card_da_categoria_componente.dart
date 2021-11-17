@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 class Categoria {
   final String nome;
   final Color cor;
+  final String img_url;
 
-  const Categoria(this.nome, this.cor);
+  const Categoria(this.nome, this.cor, this.img_url);
 }
 
 class CategoriaCard extends StatelessWidget {
@@ -27,10 +28,13 @@ class CategoriaCard extends StatelessWidget {
                   child: Column(children: [
                     const SizedBox(height: 40),
                     Container(
+
                       height: 40,
                       width: 90,
                       padding: const EdgeInsets.all(50),
+
                       decoration: BoxDecoration(
+                          child: image(categoriaLista[index].img_url)
                           color: categoriaLista[index].cor,
                           borderRadius:
                               const BorderRadius.all(Radius.circular(8))),
