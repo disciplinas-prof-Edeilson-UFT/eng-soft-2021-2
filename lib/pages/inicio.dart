@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/components/inicio/card_da_categoria_componente.dart';
 import 'package:ifood_engenharia_de_software/components/inicio/menu_de_redirecionamento.dart';
+import 'package:ifood_engenharia_de_software/components/inicio/mercadotoque_aqui_e_escolha_os_itens.dart';
 import 'package:ifood_engenharia_de_software/components/inicio/ultimas_lojas_componente.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
@@ -36,7 +37,10 @@ class _PaginaInicioState extends State<PaginaInicio>
             'Loja exemplo3',
             'Loja exemplo4'
           ],
-        ))
+        )),
+        Expanded(
+            child: CardEscolha(
+            ))
       ]),
     );
   }
