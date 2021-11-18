@@ -27,7 +27,8 @@ class _TopoPaginaState extends State<TopoPagina> {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return SizedBox( 
+      child: Row(
 
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -64,6 +65,7 @@ class _TopoPaginaState extends State<TopoPagina> {
             ),
           ),
       ],
+      )
     );
   }
 }
