@@ -26,7 +26,7 @@ class CategoriaCard extends StatelessWidget {
             itemBuilder: (_, index) => SizedBox(
                   width: MediaQuery.of(context).size.width * 0.3,
                   child: Column(children: [
-                    const SizedBox(height: 35),
+                    const SizedBox(height: 20),
 
                     Padding(
                       padding: const EdgeInsets.all(5),

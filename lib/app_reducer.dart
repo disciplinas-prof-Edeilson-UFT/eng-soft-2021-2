@@ -10,7 +10,11 @@ AppState reducer(AppState state, dynamic action) {
     return AppState(
         paginaAtual: state.paginaAtual,
         pecaNovamenteData: action.pecaNovamenteData);
-  } else {
+  } else if (action is AlterarCard) {
+    return AppState(
+        paginaAtual: state.paginaAtual,
+        cardcategoriaData:action.cardcategoriaData);
+  }else {
     return AppState();
   }
 }
