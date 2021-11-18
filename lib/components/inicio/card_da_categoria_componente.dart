@@ -26,19 +26,43 @@ class CategoriaCard extends StatelessWidget {
             itemBuilder: (_, index) => SizedBox(
                   width: MediaQuery.of(context).size.width * 0.3,
                   child: Column(children: [
-                    const SizedBox(height: 40),
-                    Container(
+                    const SizedBox(height: 35),
 
-                      height: 40,
-                      width: 90,
-                      padding: const EdgeInsets.all(50),
+                    Padding(
+                      padding: const EdgeInsets.all(5),
+                      child:Container(
+                        color: const Color(0xffffffff),
 
-                      decoration: BoxDecoration(
-                          child: image(categoriaLista[index].img_url)
-                          color: categoriaLista[index].cor,
-                          borderRadius:
-                              const BorderRadius.all(Radius.circular(8))),
-                    ),
+                    child:Stack(
+
+
+
+                      children: <Widget>[
+
+                        Container(
+
+                          height: 40,
+                          width: 90,
+
+
+
+
+                          decoration: BoxDecoration(
+
+                              color: categoriaLista[index].cor,
+                              borderRadius:
+                              const BorderRadius.all(Radius.circular(8))
+                          ),
+                        ),
+                        Image.network(
+
+                          categoriaLista[index].img_url,
+
+
+                        )
+                      ],
+                    ),),),
+
                     const SizedBox(height: 10),
                     Text(
                       categoriaLista[index].nome,
