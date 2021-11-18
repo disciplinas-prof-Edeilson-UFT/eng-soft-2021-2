@@ -3,6 +3,7 @@ import 'package:ifood_engenharia_de_software/components/inicio/card_da_categoria
 import 'package:ifood_engenharia_de_software/components/inicio/menu_de_redirecionamento.dart';
 import 'package:ifood_engenharia_de_software/components/inicio/ultimas_lojas_componente.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
+import 'package:ifood_engenharia_de_software/app_store.dart';
 
 class PaginaInicio extends StatefulWidget {
   const PaginaInicio({Key? key}) : super(key: key);
@@ -16,19 +17,23 @@ class _PaginaInicioState extends State<PaginaInicio>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(children: const [
-        Text('inicio',
+      body: Column(children: [
+        const Text('inicio',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
-        Menu(),
-        CategoriaCard(categoriaLista: [
-          Categoria('Pizza', AppCores.vermelhoPrincipal),
-          Categoria('Mercado', Color(0xffb5cf47)),
-          Categoria('Vale Alimentacao', Color(0xffA553BE)),
-          Categoria('Sorvete', Color(0xffF8879B)),
-          Categoria('Hamburguer', Color(0xffA553BE)),
-          Categoria('Doces', Color(0xffF8879B))
-        ]),
-        Expanded(
+        const Menu(),
+
+        AnimatedBuilder(
+          animation: appStore,
+          builder: (_, index) {
+             return CategoriaCard(categoriaLista:
+
+              appStore.state.cardcategoriaData.categoriaLista
+
+            );}),
+
+
+
+        const Expanded(
             child: UltimasLojasRestaurante(
           listalojas: [
             'Loja exemplo1',
