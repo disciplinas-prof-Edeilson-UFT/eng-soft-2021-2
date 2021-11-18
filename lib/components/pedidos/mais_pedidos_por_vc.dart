@@ -1,13 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-class MaisPedidos {
-  final String nome;
-  final String estado;
-  final String fotourl;
-
-  MaisPedidos(this.nome, this.estado, this.fotourl);
-}
+import 'package:ifood_engenharia_de_software/models/mais_pedidos_por_vc_model.dart';
 
 class MaisPedidosPorVcCard extends StatelessWidget {
   final List<MaisPedidos> maispedidoslist;
