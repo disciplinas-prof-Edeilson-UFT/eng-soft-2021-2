@@ -1,7 +1,11 @@
 import 'models/peca_novamente_model.dart';
+
+import 'models/banner_de_categoria_model.dart';
+
 import 'models/card_da_categoria_componente_model.dart';
 import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
+
 
 
 class AppState {
@@ -9,12 +13,23 @@ class AppState {
   final PecaNovamenteModel pecaNovamenteData;
   final CategoriaModel cardcategoriaData;
 
+  final BannerDeCategoriaModel bannerdecategoriaData;
+ 
+  
   AppState(
       {this.paginaAtual = 0,
       this.pecaNovamenteData = const PecaNovamenteModel(
           'https://aguardando.fase.de.utilizar.o.storage/',
           [Produto('Pizza G Calabresa C/Borda Mista', 1)]),
 
+      
+      this.bannerdecategoriaData = const BannerDeCategoriaModel( 
+        [CategoriaBanner('express'),
+         CategoriaBanner('Mercado'),
+         CategoriaBanner('Farmácia'),
+         CategoriaBanner('Bebidas'),
+         CategoriaBanner('Pizza'),
+         CategoriaBanner('Lanches')]),
 
         this.cardcategoriaData = const CategoriaModel([
 
