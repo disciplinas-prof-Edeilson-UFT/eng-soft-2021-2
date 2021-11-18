@@ -1,9 +1,8 @@
 // ignore_for_file: import_of_legacy_library_into_null_safe, unused_import
 
-import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-
 import 'package:ifood_engenharia_de_software/pages/login_page.dart';
 import 'package:ifood_engenharia_de_software/pages/perfil.dart';
 import 'package:ifood_engenharia_de_software/utils/fire_auth.dart';
