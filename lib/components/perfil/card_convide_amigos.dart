@@ -11,6 +11,7 @@ class _CardConvidarState extends State<CardConvidar> {
   @override
   Widget build(BuildContext context) {
     return FractionallySizedBox(
+      heightFactor: 0.5,
       child: Container(
         margin: const EdgeInsets.all(10),
         decoration: BoxDecoration(
@@ -24,7 +25,6 @@ class _CardConvidarState extends State<CardConvidar> {
             ),
           ],
         ),
-        height: 75,
         child: Container(
           padding: const EdgeInsets.all(20),
           child: Column(
@@ -33,7 +33,7 @@ class _CardConvidarState extends State<CardConvidar> {
               Row(
                 children: [
                   Container(
-                    width: 33.0,
+                    width: 30.0,
                     color: Colors.white,
                     child: Image.network('https://i.imgur.com/q3Fau41.png'),
                   ),
