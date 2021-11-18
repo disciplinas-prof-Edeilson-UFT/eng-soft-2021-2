@@ -1,13 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ifood_engenharia_de_software/models/card_da_categoria_componente_model.dart';
 
-class Categoria {
-  final String nome;
-  final Color cor;
-  final String img_url;
-
-  const Categoria(this.nome, this.cor, this.img_url);
-}
 
 class CategoriaCard extends StatelessWidget {
   final List<Categoria> categoriaLista;

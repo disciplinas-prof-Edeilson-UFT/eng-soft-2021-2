@@ -12,12 +12,12 @@ class AlterarCard {
   CategoriaModel cardcategoriaData = const CategoriaModel([
 
 
-    Categoria('Pizza', AppCores.vermelhoPrincipal, 'https://aguardando.fase.de.utilizar.o.storage/'),
-    Categoria('Mercado', Color(0xffb5cf47), 'https://aguardando.fase.de.utilizar.o.storage/'),
-    Categoria('Vale Alimentacao', Color(0xffA553BE), 'https://aguardando.fase.de.utilizar.o.storage/'),
-    Categoria('Sorvete', Color(0xffF8879B), 'https://aguardando.fase.de.utilizar.o.storage/'),
-    Categoria('Hamburguer', Color(0xffA553BE), 'https://aguardando.fase.de.utilizar.o.storage/'),
-    Categoria('Doces', Color(0xffF8879B), 'https://aguardando.fase.de.utilizar.o.storage/')
+    Categoria('Pizza', AppCores.vermelhoPrincipal, 'https://cdn.discordapp.com/attachments/809775517493624852/910621459393699860/acai.jpg'),
+    Categoria('Mercado', Color(0xffffffff), 'https://cdn.discordapp.com/attachments/809775517493624852/910621463466344478/brasileira.jpg'),
+    Categoria('Vale Alimentacao', Color(0xffA553BE), 'https://cdn.discordapp.com/attachments/809775517493624852/910621464745623572/cafe.jpg'),
+    Categoria('Sorvete', Color(0xffF8879B), 'https://cdn.discordapp.com/attachments/809775517493624852/910621465857101824/doces.jpg'),
+    Categoria('Hamburguer', Color(0xffA553BE), 'https://cdn.discordapp.com/attachments/809775517493624852/910621467291570186/japones.jpg'),
+    Categoria('Doces', Color(0xffF8879B), 'https://cdn.discordapp.com/attachments/868118606448324638/910683119441547284/saudavel.jpg')
 
     ]
   );

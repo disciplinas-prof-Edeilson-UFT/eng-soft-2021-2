@@ -25,7 +25,7 @@ class _PaginaInicioState extends State<PaginaInicio>
         AnimatedBuilder(
           animation: appStore,
           builder: (_, index) {
-             CategoriaCard(categoriaLista:
+             return CategoriaCard(categoriaLista:
 
               appStore.state.cardcategoriaData.categoriaLista
 
