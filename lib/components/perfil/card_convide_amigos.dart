@@ -33,10 +33,9 @@ class _CardConvidarState extends State<CardConvidar> {
               Row(
                 children: [
                   Container(
-                    width: 30.0,
+                    width: 33.0,
                     color: Colors.white,
-                    child: Image.network(
-                        'https://cdn-icons-png.flaticon.com/512/1140/1140033.png'),
+                    child: Image.network('https://i.imgur.com/q3Fau41.png'),
                   ),
                   SizedBox(width: 10.0),
                   Column(
@@ -52,8 +51,8 @@ class _CardConvidarState extends State<CardConvidar> {
                               color: Colors.grey[600], fontSize: 13.0)),
                     ],
                   ),
-                  SizedBox(width: 40.0),
-                  const Icon(
+                  SizedBox(width: 35.0),
+                  Icon(
                     Icons.chevron_right_outlined,
                     color: Colors.grey,
                   ),
