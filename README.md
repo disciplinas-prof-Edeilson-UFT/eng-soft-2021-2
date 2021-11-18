@@ -6,8 +6,8 @@
 ### Semana 1 - 04/11/2021 - 11/11/2021
 ### Semana 2
  - [ ] R2 - Tela de pedidos
- 
- - [x] T4 - state, model e action do R2/T1 - Lindomar Rodrigues
+	 - [x] T4 - state, model e action do R2/T1 - Lindomar Rodrigues
+	 - [x] T6 - state, model e action do R0/T1 - Pablo henrique
 
 ### Semana 1
 
