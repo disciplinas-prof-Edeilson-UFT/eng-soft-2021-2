@@ -7,6 +7,8 @@ import 'package:ifood_engenharia_de_software/utils/fire_auth.dart';
 
 import 'login_page.dart';
 
+import '../components/perfil/card_convide_amigos.dart';
+
 class PaginaPerfil extends StatefulWidget {
   final User user;
 
@@ -117,6 +119,7 @@ class _PaginaPerfilState extends State<PaginaPerfil>
                       ),
                     ),
                   ),
+            const Expanded(child: CardConvidar()),
             const Expanded(
                 child: AbaInfCard(
               listaabas: [
