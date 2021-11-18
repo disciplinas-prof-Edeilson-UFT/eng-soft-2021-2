@@ -24,13 +24,13 @@ class _PaginaInicioState extends State<PaginaInicio>
 
         AnimatedBuilder(
           animation: appStore,
-          builder: (_, index) =>
-             CategoriaCard(categoriaLista:[Categoria(
-              appStore.state.cardcategoriaData.categoriaLista[4].nome,
-              appStore.state.cardcategoriaData.categoriaLista[4].cor,
-              appStore.state.cardcategoriaData.categoriaLista[4].img_url,
-            )]),
-        ),
+          builder: (_, index) {
+             CategoriaCard(categoriaLista:
+
+              appStore.state.cardcategoriaData.categoriaLista
+
+            );}),
+
 
 
         const Expanded(

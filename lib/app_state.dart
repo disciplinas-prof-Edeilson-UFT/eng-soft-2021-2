@@ -13,7 +13,9 @@ class AppState {
       this.pecaNovamenteData = const PecaNovamenteModel(
           'https://aguardando.fase.de.utilizar.o.storage/',
           [Produto('Pizza G Calabresa C/Borda Mista', 1)]),
-      this.cardcategoriaData = const CategoriaModel ([
+
+
+        this.cardcategoriaData = const CategoriaModel ([
 
         Categoria('Pizza', AppCores.vermelhoPrincipal, 'https://cdn.discordapp.com/attachments/809775517493624852/910621459393699860/acai.jpg'),
         Categoria('Mercado', Color(0xffffffff), 'https://cdn.discordapp.com/attachments/809775517493624852/910621463466344478/brasileira.jpg'),
