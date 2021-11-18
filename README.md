@@ -2,7 +2,14 @@
 
 ## Etapa de desenvolvimento
 
+
 ### Semana 1 - 04/11/2021 - 11/11/2021
+### Semana 2
+ - [ ] R2 - Tela de pedidos
+ 
+ - [x] T4 - state, model e action do R2/T1 - Lindomar Rodrigues
+
+### Semana 1
 
  - [ ] R0 - Tela de início
 	 - [x] T1 - Carrossel de categorias - Pablo
