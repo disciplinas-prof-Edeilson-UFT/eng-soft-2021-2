@@ -1,15 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ifood_engenharia_de_software/models/banner_de_categoria_model.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
-class Categoria {
-  final String nome;
-
-  const Categoria(this.nome);
-}
-
 class BannersDeCategorias extends StatelessWidget {
-  final List<Categoria> listacategoria;
+  final List<CategoriaBanner> listacategoria;
 
   const BannersDeCategorias({Key? key, required this.listacategoria})
       : super(key: key);
@@ -35,9 +30,9 @@ class BannersDeCategorias extends StatelessWidget {
               onPressed: () {},
               child: Column(children: [
                 const SizedBox(height: 15),
-                Row(
-                  children: [Text(listacategoria[index].nome)],
-                )
+                Row(children: [
+                  Text(listacategoria[index].nome),
+                ])
               ]));
         });
   }
