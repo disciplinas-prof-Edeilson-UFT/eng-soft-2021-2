@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 import 'package:ifood_engenharia_de_software/models/banner_de_categoria_model.dart';
-
 
 class BannersDeCategorias extends StatelessWidget {
   final List<CategoriaBanner> listacategoria;
@@ -12,30 +10,65 @@ class BannersDeCategorias extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ButtonStyle style = ElevatedButton.styleFrom(
-        textStyle: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-        fixedSize: const Size(175, 70),
-        primary: AppCores.vermelhoPrincipal);
 
     return GridView.builder(
+        scrollDirection: Axis.vertical,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             childAspectRatio: (4 / 2),
-            crossAxisSpacing: 20,
-            mainAxisSpacing: 20),
+            crossAxisSpacing: 10,
+            mainAxisSpacing: 10),
         shrinkWrap: true,
         itemCount: listacategoria.length,
         itemBuilder: (BuildContext context, index) {
-          return ElevatedButton(
-              style: style,
-              onPressed: () {},
-              child: Column(children: [
-                const SizedBox(height: 15),
-                Row( 
-                  children: [Text(listacategoria[index].nome),
-                  ]
+          return Container(
+            height: 100,
+            width: 400,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(5),
+              color: Colors.grey[100],
+            image:  DecorationImage(
+              fit: BoxFit.fill,   
+              image: NetworkImage(listacategoria[index].imgurl)
+            ),
+          ),  
+
+            child:Padding(
+                padding: const EdgeInsets.all(5),
+                child:Text(listacategoria[index].nome,
+                  style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white),)
                 )
-              ]));
-        });
+          );
+        }
+    );
   }
 }
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
