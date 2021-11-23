@@ -1,17 +1,9 @@
 class CabecalhoPerfil {
 
   final String nome;
-  final String fotoLogoCabecalhoPerfil;
+  final String imgUrlCabecalho;
 
-  CabecalhoPerfil({required this.nome, required this.fotoLogoCabecalhoPerfil});
-
-
-  factory CabecalhoPerfil.fromFirestore(firestoreData) {
-    return CabecalhoPerfil(
-      nome: '',
-      fotoLogoCabecalhoPerfil: '',
-    );
-  }
+  CabecalhoPerfil(this.nome,this.imgUrlCabecalho);
 
   toFirestore() {
     // TODO
