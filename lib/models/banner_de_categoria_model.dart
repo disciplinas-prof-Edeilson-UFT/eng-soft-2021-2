@@ -1,7 +1,7 @@
 class CategoriaBanner {
   final String nome;
-  
-  const CategoriaBanner(this.nome);
+  final String imgurl;
+  const CategoriaBanner(this.nome,this.imgurl);
 }
 
 class BannerDeCategoriaModel {
