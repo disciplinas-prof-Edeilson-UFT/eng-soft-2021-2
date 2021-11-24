@@ -5,14 +5,14 @@ import 'models/banner_de_categoria_model.dart';
 import 'models/card_da_categoria_componente_model.dart';
 import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
-
+import 'models/ultimas_lojas_model.dart';
 
 
 class AppState {
   final int paginaAtual;
   final PecaNovamenteModel pecaNovamenteData;
   final CategoriaModel cardcategoriaData;
-
+  final UltimasLojasModel ultimaslojasData;
   final BannerDeCategoriaModel bannerdecategoriaData;
  
   
@@ -44,11 +44,14 @@ class AppState {
           Categoria('Sorvete', Color(0xffF8879B), 'https://cdn.discordapp.com/attachments/809775517493624852/910621465857101824/doces.jpg'),
           Categoria('Hamburguer', Color(0xffA553BE), 'https://cdn.discordapp.com/attachments/809775517493624852/910621467291570186/japones.jpg'),
           Categoria('Doces', Color(0xffF8879B), 'https://cdn.discordapp.com/attachments/868118606448324638/910683119441547284/saudavel.jpg')
-
-
-
-
-
-  ])});
+        ]),
+        this.ultimaslojasData = const UltimasLojasModel(
+      [
+      Lojas("McDonald's",'https://i.imgur.com/L8VcJbD.png'),
+      Lojas('Burger King','https://i.imgur.com/BhBX8HH.png'),
+      Lojas('Giraffas','https://i.imgur.com/0I9W33L.png'),
+      Lojas('Subway','https://i.imgur.com/rYyDTK6.png'),
+      ]),
+  });
   
 }
