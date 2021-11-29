@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class TopoPagina extends StatefulWidget {
   const TopoPagina({Key? key}) : super(key: key);
 
@@ -8,9 +7,7 @@ class TopoPagina extends StatefulWidget {
   _TopoPaginaState createState() => _TopoPaginaState();
 }
 
-
 class _TopoPaginaState extends State<TopoPagina> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,16 +31,13 @@ class _TopoPaginaState extends State<TopoPagina> {
             ),
           ),
           IconButton(
-            icon: const Icon(
-              Icons.qr_code_scanner_outlined,
-            ),
-            padding: const EdgeInsets.only(left: 120),
-            alignment: Alignment.topLeft,
-            color: Colors.red,
-            onPressed: () {
-              
-            }
-          ),
+              icon: const Icon(
+                Icons.qr_code_scanner_outlined,
+              ),
+              padding: const EdgeInsets.only(left: 120),
+              alignment: Alignment.topLeft,
+              color: Colors.red,
+              onPressed: () {}),
         ],
       ),
     );

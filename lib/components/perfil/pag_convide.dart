@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/pages/perfil.dart';
+import 'package:share/share.dart';
 
 class PageConvidar extends StatefulWidget {
   const PageConvidar({Key? key}) : super(key: key);
@@ -17,7 +18,7 @@ class _PageConvidarState extends State<PageConvidar> {
           children: <Widget>[
             Container(
               padding:
-                  const EdgeInsets.symmetric(horizontal: 10.0, vertical: 30.0),
+                  const EdgeInsets.symmetric(horizontal: 10.0, vertical: 40.0),
               alignment: Alignment.centerLeft,
               child: GestureDetector(
                 onTap: () {
@@ -107,23 +108,25 @@ class _PageConvidarState extends State<PageConvidar> {
             //Botão de compartilhamento
             Expanded(
               child: Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Container(
-                    margin: const EdgeInsets.only(bottom: 20.0),
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 120.0, vertical: 12.0),
-                    decoration: const BoxDecoration(
-                        color: Colors.red,
-                        borderRadius: BorderRadius.all(Radius.circular(5))),
-                    child: (const Text('Compartilhar',
-                        style: TextStyle(
-                            letterSpacing: 1.0,
-                            color: Colors.white,
-                            fontSize: 13.0,
-                            fontWeight: FontWeight.w700),
-                        textAlign: TextAlign.center)),
-                  ) // Your footer widget
+                child: MaterialButton(
+                  padding: const EdgeInsets.symmetric(horizontal: 120.0),
+                  elevation: 2.0,
+                  height: 50.0,
+                  minWidth: 100.0,
+                  color: Colors.red,
+                  child: const Text(
+                    'Compartilhar',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15.0,
+                    ),
                   ),
+                  onPressed: () {
+                    Share.share(
+                        "Bateu aquela fome? Wanderson e nós do #iFood vamos te ajudar! Insira o cupom 5ELJAE12Q9 e ganhe R\$ 15 de desconto na sua primeira compra pelo app. https://ifoodbr.onelink.me/F4X4/mgm?mgm_code=5ELJAE12Q9");
+                  },
+                ),
+              ),
             ),
           ],
         ),

@@ -1,13 +1,12 @@
 class CardCovideAmigos {
-  final String imageConvideAmigos;
-  final String codigoConvideAmigos;
+  final String img_url;
+  final String codigo_convide;
 
-  CardCovideAmigos(
-      {required this.imageConvideAmigos, required this.codigoConvideAmigos});
+  CardCovideAmigos({required this.img_url, required this.codigo_convide});
 
   factory CardCovideAmigos.fromFirestore(firestoreData) {
     // TODO
-    return CardCovideAmigos(codigoConvideAmigos: '', imageConvideAmigos: '');
+    return CardCovideAmigos(codigo_convide: '', img_url: '');
   }
 
   toFirestore() {
