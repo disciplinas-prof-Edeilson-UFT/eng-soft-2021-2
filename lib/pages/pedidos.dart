@@ -4,6 +4,8 @@ import 'package:ifood_engenharia_de_software/components/pedidos/peca_novamente_c
 import 'package:ifood_engenharia_de_software/components/pedidos/mais_pedidos_por_vc.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
+import '../app_store.dart';
+
 class PaginaPedidos extends StatefulWidget {
   const PaginaPedidos({Key? key}) : super(key: key);
 
@@ -23,15 +25,21 @@ class _PaginaPedidosState extends State<PaginaPedidos>
             width: double.infinity,
             height: 160,
             color: AppCores.cinza1,
-            child: Wrap(alignment: WrapAlignment.center, children: const [
-              Text(
+            child: Wrap(alignment: WrapAlignment.center, children: [
+              const Text(
                 'Pedidos',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
               ),
-              SizedBox(height: 60),
-              PecaNovamenteCard(
-                quantidade: 1,
-                produto: 'Pizza G Calabresa C/Borda Mista',
+              const SizedBox(height: 60),
+              AnimatedBuilder(
+                animation: appStore,
+                builder: (_, __) {
+                  return PecaNovamenteCard(
+                    quantidade:
+                        appStore.state.pecaNovamenteData.pedidos[0].quantidade,
+                    produto: appStore.state.pecaNovamenteData.pedidos[0].nome,
+                  );
+                },
               )
             ]),
           ),

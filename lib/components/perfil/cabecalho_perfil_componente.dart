@@ -1,17 +1,29 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class TopoPagina extends StatefulWidget {
-  const TopoPagina({Key? key}) : super(key: key);
+  final User user;
+
+  const TopoPagina({Key? key, required this.user}) : super(key: key);
 
   @override
   _TopoPaginaState createState() => _TopoPaginaState();
 }
 
-class _TopoPaginaState extends State<TopoPagina> {
+class _TopoPaginaState extends State<TopoPagina>
+    with SingleTickerProviderStateMixin {
+  late User _currentUser;
+
+  @override
+  void initState() {
+    _currentUser = widget.user;
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Row(
+    return SizedBox(
+      child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Padding(
@@ -21,13 +33,12 @@ class _TopoPaginaState extends State<TopoPagina> {
               height: 50,
             ),
           ),
-          const Padding(
-            padding: EdgeInsets.only(top: 60, left: 16, bottom: 50),
+          Padding(
+            padding: const EdgeInsets.only(top: 60, left: 16, bottom: 50),
             child: Text(
-              //Exemplo nome, podendo utilizar uma funacao para recupera nome usuario
-              "Vinicius de Oliveira",
+              '${_currentUser.displayName}',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
           ),
           IconButton(

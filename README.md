@@ -2,6 +2,17 @@
 
 ## Etapa de desenvolvimento
 
+### Semana 2 - 11/11/2021 - 18/11/20213
+
+- [ ] R0 - Tela de início
+	 - [x] T6 - state, model e action do R0/T1 - Pablo henrique
+- [ ] R1 - Tela de busca
+	 - [x] T3 - Model dos banners de categorias da pagina de busca (R1/T1) - Arthur
+- [ ] R2 - Tela de pedidos
+	 - [x] T4 - state, model e action do R2/T1 - Lindomar Rodrigues
+- [ ] R4 - Firebase
+	- [x] Autenticação - Marcos Gilmário
+
 ### Semana 1 - 04/11/2021 - 11/11/2021
 
  - [ ] R0 - Tela de início
