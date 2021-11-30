@@ -5,9 +5,13 @@ import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 class PecaNovamenteCard extends StatelessWidget {
   final int quantidade;
   final String produto;
+  final String logoEstabelecimentoImgUrl;
 
   const PecaNovamenteCard(
-      {Key? key, required this.quantidade, required this.produto})
+      {Key? key,
+      required this.quantidade,
+      required this.produto,
+      required this.logoEstabelecimentoImgUrl})
       : super(key: key);
 
   @override
@@ -39,12 +43,13 @@ class PecaNovamenteCard extends StatelessWidget {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  Text(
+                children:  [
+                  const Text(
                     'Peça de novo',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
-                  Text('logo')
+                  Image.network(logoEstabelecimentoImgUrl, width: 50,)
+
                 ],
               ),
               Row(
