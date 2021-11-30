@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
+import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
 class TopoPagina extends StatefulWidget {
   final User user;
@@ -14,43 +16,65 @@ class _TopoPaginaState extends State<TopoPagina>
     with SingleTickerProviderStateMixin {
   late User _currentUser;
 
+  String ticket = '';
+  List<String> tickets = [];
+
   @override
   void initState() {
     _currentUser = widget.user;
     super.initState();
   }
 
+  readQRCode() async {
+    String code = await FlutterBarcodeScanner.scanBarcode(
+      "#FFFFFF",
+      "Cancelar",
+      true,
+      ScanMode.QR,
+    );
+    setState(() => ticket = code != '-1' ? code : 'Não validado');
+  }
+
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 15),
+
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 60, left: 10, bottom: 50),
+            padding: const EdgeInsets.only(top: 35, bottom: 45, right: 20),
             child: Image.network(
               "https://imgur.com/EPUWxPP.png",
               height: 50,
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 60, left: 16, bottom: 50),
+            padding: const EdgeInsets.only(top: 45, right: 20, bottom: 30),
             child: Text(
               '${_currentUser.displayName}',
               textAlign: TextAlign.center,
               style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
           ),
-          IconButton(
-              icon: const Icon(
-                Icons.qr_code_scanner_outlined,
+          Expanded(
+            child: Align(
+              alignment: Alignment.topRight,
+              child: IconButton(
+                icon: const Icon(
+                  Icons.qr_code_scanner_outlined,
+                  size: 25,
+                ),
+                color: AppCores.vermelhoPrincipal,
+                onPressed: readQRCode
               ),
-              padding: const EdgeInsets.only(left: 120),
-              alignment: Alignment.topLeft,
-              color: Colors.red,
-              onPressed: () {}),
+            ),
+          ),
         ],
-      ),
+      )
     );
   }
 }
