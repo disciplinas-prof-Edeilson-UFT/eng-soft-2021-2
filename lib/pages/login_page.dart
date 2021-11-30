@@ -8,8 +8,8 @@ import 'package:flutter/widgets.dart';
 import 'package:ifood_engenharia_de_software/layouts/default.dart';
 import 'package:ifood_engenharia_de_software/pages/register_page.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
-import 'package:ifood_engenharia_de_software/utils/fire_auth.dart';
-import 'package:ifood_engenharia_de_software/utils/validator.dart';
+import 'package:ifood_engenharia_de_software/utilities/fire_auth.dart';
+import 'package:ifood_engenharia_de_software/utilities/validator.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);

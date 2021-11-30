@@ -6,8 +6,8 @@ import 'package:flutter/widgets.dart';
 
 import 'package:ifood_engenharia_de_software/pages/login_page.dart';
 import 'package:ifood_engenharia_de_software/pages/perfil.dart';
-import 'package:ifood_engenharia_de_software/utils/fire_auth.dart';
-import 'package:ifood_engenharia_de_software/utils/validator.dart';
+import 'package:ifood_engenharia_de_software/utilities/fire_auth.dart';
+import 'package:ifood_engenharia_de_software/utilities/validator.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({Key? key}) : super(key: key);
