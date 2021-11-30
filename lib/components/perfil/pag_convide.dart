@@ -1,14 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/pages/perfil.dart';
+import 'package:share/share.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class PageConvidar extends StatefulWidget {
-  const PageConvidar({Key? key}) : super(key: key);
+  final User user;
+  const PageConvidar({Key? key, required this.user}) : super(key: key);
 
   @override
   _PageConvidarState createState() => _PageConvidarState();
 }
 
-class _PageConvidarState extends State<PageConvidar> {
+class _PageConvidarState extends State<PageConvidar>
+    with SingleTickerProviderStateMixin {
+  late User _currentUser;
+
+  @override
+  void initState() {
+    _currentUser = widget.user;
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return FractionallySizedBox(
@@ -17,13 +29,13 @@ class _PageConvidarState extends State<PageConvidar> {
           children: <Widget>[
             Container(
               padding:
-                  const EdgeInsets.symmetric(horizontal: 10.0, vertical: 30.0),
+                  const EdgeInsets.symmetric(horizontal: 10.0, vertical: 40.0),
               alignment: Alignment.centerLeft,
               child: GestureDetector(
                 onTap: () {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(
-                      builder: (context) => const PaginaPerfil(),
+                      builder: (context) => PaginaPerfil(user: _currentUser),
                     ),
                   );
                 },
@@ -88,7 +100,7 @@ class _PageConvidarState extends State<PageConvidar> {
                     borderRadius: BorderRadius.all(Radius.circular(5))),
                 child: Column(
                   children: <Widget>[
-                    const Text('5ELAE12Q9',
+                    const Text('5ELJAE12Q9',
                         style: TextStyle(
                             letterSpacing: 1.0,
                             color: Colors.black87,
@@ -107,23 +119,25 @@ class _PageConvidarState extends State<PageConvidar> {
             //Botão de compartilhamento
             Expanded(
               child: Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Container(
-                    margin: const EdgeInsets.only(bottom: 20.0),
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 120.0, vertical: 12.0),
-                    decoration: const BoxDecoration(
-                        color: Colors.red,
-                        borderRadius: BorderRadius.all(Radius.circular(5))),
-                    child: (const Text('Compartilhar',
-                        style: TextStyle(
-                            letterSpacing: 1.0,
-                            color: Colors.white,
-                            fontSize: 13.0,
-                            fontWeight: FontWeight.w700),
-                        textAlign: TextAlign.center)),
-                  ) // Your footer widget
+                child: MaterialButton(
+                  padding: const EdgeInsets.symmetric(horizontal: 120.0),
+                  elevation: 2.0,
+                  height: 50.0,
+                  minWidth: 100.0,
+                  color: Colors.red,
+                  child: const Text(
+                    'Compartilhar',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15.0,
+                    ),
                   ),
+                  onPressed: () {
+                    Share.share(
+                        'Bateu aquela fome? ${_currentUser.displayName} e nós do #eng-soft-2021-2 vamos te ajudar! Insira o cupom 5ELJAE12Q9 e ganhe R\$ 15 de desconto na sua primeira compra pelo app. https://ifoodbr.onelink.me/F4X4/mgm?mgm_code=5ELJAE12Q9');
+                  },
+                ),
+              ),
             ),
           ],
         ),
