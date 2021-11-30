@@ -117,9 +117,7 @@ class _MecanismodeBusca extends State<MecanismodeBusca> {
                 AnimatedBuilder(
                     animation: appStore,
                     builder: (_, __) {
-                      return SizedBox(
-                          height: 300,
-                          width: 340,
+                      return SingleChildScrollView(
                           child: BannersDeCategorias(
                               listacategoria: appStore
                                   .state.bannerdecategoriaData.listacategoria));
