@@ -112,16 +112,19 @@ class _MecanismodeBusca extends State<MecanismodeBusca> {
         ),
         body: isExecuted
             ? searchedData()
-            : Column(children: [
+            : SingleChildScrollView(
+              child: Column(children: [
                 const Padding(padding: EdgeInsets.all(20.0)),
                 AnimatedBuilder(
                     animation: appStore,
                     builder: (_, __) {
-                      return SingleChildScrollView(
+                      return SizedBox(
                           child: BannersDeCategorias(
                               listacategoria: appStore
                                   .state.bannerdecategoriaData.listacategoria));
                     })
-              ]));
+              ]),
+            ),
+    );
   }
 }
