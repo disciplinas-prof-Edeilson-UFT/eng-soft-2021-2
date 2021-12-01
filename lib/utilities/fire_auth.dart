@@ -1,6 +1,7 @@
 // ignore_for_file: avoid_print
 
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 
 class FireAuth {
   // For registering a new user
@@ -25,9 +26,9 @@ class FireAuth {
       user = auth.currentUser;
     } on FirebaseAuthException catch (e) {
       if (e.code == 'weak-password') {
-        print('The password provided is too weak.');
+        print('A senha fornecida é muito fraca');
       } else if (e.code == 'email-already-in-use') {
-        print('The account already exists for that email.');
+        print('Já existe uma conta vinculada a este email');
       }
     } catch (e) {
       print(e);
@@ -53,7 +54,7 @@ class FireAuth {
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
         print('Usuário não encontrado para esse email');
-      } else if (e.code == 'Senha') {
+      } else if (e.code == 'wrong-password') {
         print('A senha inserida está incorreta.');
       }
     }

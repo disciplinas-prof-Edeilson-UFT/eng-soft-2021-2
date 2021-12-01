@@ -5,7 +5,7 @@ class Validator {
     }
 
     if (name.isEmpty) {
-      return 'Name can\'t be empty';
+      return 'O campo nome não pode ser vazio';
     }
 
     return null;
@@ -34,9 +34,9 @@ class Validator {
     }
 
     if (password.isEmpty) {
-      return 'Password can\'t be empty';
+      return 'A senha não pode ser vazia';
     } else if (password.length < 6) {
-      return 'Enter a password with length at least 6';
+      return 'Insira uma senha com 6 cracteres ou mais';
     }
 
     return null;
