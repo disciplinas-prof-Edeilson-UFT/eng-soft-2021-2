@@ -2,6 +2,7 @@ import 'models/mais_pedidos_por_vc_model.dart';
 import 'models/peca_novamente_model.dart';
 import 'models/banner_de_categoria_model.dart';
 import 'models/card_da_categoria_componente_model.dart';
+import 'models/abas_inferiores_model.dart';
 import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 
@@ -11,6 +12,7 @@ class AppState {
   final CategoriaModel cardcategoriaData;
   final MaisPedidosModel maispedidosData;
   final BannerDeCategoriaModel bannerdecategoriaData;
+  final AbasInferioresModel abasinferioresData;
 
   AppState(
       {this.paginaAtual = 0,
@@ -64,5 +66,13 @@ class AppState {
             'https://media.discordapp.net/attachments/809775517493624852/910736507881553931/b891ddaf349a66bf1cdcccabec3c9a5b.png'),
         MaisPedidos('Vikings', '',
             'https://cdn.discordapp.com/attachments/809775517493624852/910736208626323497/22132_800x800.png')
-      ])});
+      ]),
+      this.abasinferioresData = const AbasInferioresModel([
+        Abas("Ajuda",'https://imgur.com/NgRmdFM.png'),
+        Abas("Configurações",'https://imgur.com/TseB9Qd.png'),
+        Abas("Segurança",'https://imgur.com/bb3Vz0Y.png'),
+        Abas("Usar no carro",'https://imgur.com/yK7SRwg.png'),
+        Abas("Sugerir restaurantes",'https://imgur.com/n9yeTcC.png'),
+      ]),
+      });
 }
