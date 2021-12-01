@@ -56,7 +56,6 @@ class FireAuth {
         print('Usuário não encontrado para esse email');
       } else if (e.code == 'wrong-password') {
         print('A senha inserida está incorreta.');
-        const Text('A senha inserida está incorreta.');
       }
     }
 
