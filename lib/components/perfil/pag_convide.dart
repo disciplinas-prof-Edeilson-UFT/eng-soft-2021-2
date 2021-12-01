@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/pages/perfil.dart';
 import 'package:share/share.dart';
+<<<<<<< HEAD
 import 'package:firebase_auth/firebase_auth.dart';
+=======
+>>>>>>> 2b26370 (R3/T4 - Card convide seus amigos complemento + Model)
 
 class PageConvidar extends StatefulWidget {
   final User user;
@@ -134,7 +137,11 @@ class _PageConvidarState extends State<PageConvidar>
                   ),
                   onPressed: () {
                     Share.share(
+<<<<<<< HEAD
                         'Bateu aquela fome? ${_currentUser.displayName} e nós do #eng-soft-2021-2 vamos te ajudar! Insira o cupom 5ELJAE12Q9 e ganhe R\$ 15 de desconto na sua primeira compra pelo app. https://ifoodbr.onelink.me/F4X4/mgm?mgm_code=5ELJAE12Q9');
+=======
+                        "Bateu aquela fome? Wanderson e nós do #iFood vamos te ajudar! Insira o cupom 5ELJAE12Q9 e ganhe R\$ 15 de desconto na sua primeira compra pelo app. https://ifoodbr.onelink.me/F4X4/mgm?mgm_code=5ELJAE12Q9");
+>>>>>>> 2b26370 (R3/T4 - Card convide seus amigos complemento + Model)
                   },
                 ),
               ),

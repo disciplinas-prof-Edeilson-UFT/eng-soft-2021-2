@@ -31,7 +31,11 @@ class _CardConvidarState extends State<CardConvidar>
       child: FractionallySizedBox(
         heightFactor: 0.4,
         child: Container(
+<<<<<<< HEAD
           margin: const EdgeInsets.symmetric(horizontal: 20),
+=======
+          margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+>>>>>>> 2b26370 (R3/T4 - Card convide seus amigos complemento + Model)
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(6.0),
@@ -51,7 +55,11 @@ class _CardConvidarState extends State<CardConvidar>
                 Row(
                   children: [
                     Container(
+<<<<<<< HEAD
                       width: 35.0,
+=======
+                      width: 40.0,
+>>>>>>> 2b26370 (R3/T4 - Card convide seus amigos complemento + Model)
                       color: Colors.white,
                       child: Image.network('https://i.imgur.com/q3Fau41.png'),
                     ),
