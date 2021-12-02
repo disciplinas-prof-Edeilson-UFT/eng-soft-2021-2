@@ -9,37 +9,29 @@ import '../app_store.dart';
 
 class AlterarBannerDeCategoria {
   FirebaseFirestore bdc = FirebaseFirestore.instance;
-
   final BannerDeCategoriaModel bannerdecategoriaData;
 
   AlterarBannerDeCategoria(
       {this.bannerdecategoriaData = const BannerDeCategoriaModel()});
 
+  List<CategoriaBanner> listacategoria = [];
   void atualizaModel() {
     bdc
         .collection('bannerdecategoria')
         .get()
         .then((QuerySnapshot querySnapshot) {
-      for (var doc in querySnapshot.docs) {
-        BannerDeCategoriaModel bannerdecategoriaData = BannerDeCategoriaModel(
-            listacategoria: [CategoriaBanner(doc.get('nome'), doc['imgurl'])]);
-        appStore.dispatcher(AlterarBannerDeCategoria(
-            bannerdecategoriaData: bannerdecategoriaData));
-      }
-
-      /*   */
-    });
-
-    /* .get()
-        .then((QuerySnapshot querySnapshot) {
-      for (var doc in querySnapshot.docs) {
-        print(doc["first_name"]);
-      }
-      /* BannerDeCategoriaModel bannerdecategoriaData =
-            BannerDeCategoriaModel(nome: querySnapshot.data()['nome'], imgurl: item['imgurl']);
-        appStore.dispatcher(AlterarBannerDeCategoria(
-            bannerdecategoriaData: bannerdecategoriaData)); */
-      //});
-    }); */
+          querySnapshot.docs.forEach((doc) {
+            listacategoria.add(CategoriaBanner(doc['nome'], doc['imgurl'])
+            );
+          }); 
+          appStore.dispatcher(AlterarBannerDeCategoria(bannerdecategoriaData: BannerDeCategoriaModel(listacategoria: listacategoria)));
+    }); 
   }
+  
 }
+
+
+
+  
+    
+

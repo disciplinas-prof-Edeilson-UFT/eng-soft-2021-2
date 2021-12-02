@@ -33,11 +33,7 @@ class BannersDeCategorias extends StatelessWidget {
             ),
             child: Padding(
                 padding: const EdgeInsets.all(5),
-                child: Column(children: [
-                  /* Image.network(
-                    listacategoria[index].imgurl,
-                    scale: 1.0,
-                  ), */
+                child: 
                   Text(
                     listacategoria[index].nome,
                     style: const TextStyle(
@@ -45,7 +41,7 @@ class BannersDeCategorias extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         color: Colors.white),
                   )
-                ])),
+                ),
           );
         });
   }
