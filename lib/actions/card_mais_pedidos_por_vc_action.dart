@@ -1,20 +1,28 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/models/mais_pedidos_por_vc_model.dart';
 
+import '../app_store.dart';
+
 class AlterarMaisPedidos {
-  final List<MaisPedidos> maispedidoslist;
+  final MaisPedidosModel maispedidosData;
+  FirebaseFirestore firestore = FirebaseFirestore.instance;
 
-  AlterarMaisPedidos(this.maispedidoslist);
+  AlterarMaisPedidos({this.maispedidosData = const MaisPedidosModel()});
 
-  MaisPedidosModel maispedidosData = const MaisPedidosModel([
-    MaisPedidos('Bar do Diluc', 'Fechado',
-        'https://cdn.discordapp.com/attachments/809775517493624852/910734117115674624/b3225dcdeebef9074c9c082afde8d495_2527226506439238336.png'),
-    MaisPedidos('Noelle´s Pancakes', '',
-        'https://cdn.discordapp.com/attachments/809775517493624852/910732173445832754/4ea27fde21b997bc3fb141786fc1719c_6363129461192613770.png'),
-    MaisPedidos('Escudo Inquebrável', 'Fechado',
-        'https://cdn.discordapp.com/attachments/809775517493624852/910740130833244160/show.png'),
-    MaisPedidos('Presente dos Reis', 'Fechado',
-        'https://media.discordapp.net/attachments/809775517493624852/910736507881553931/b891ddaf349a66bf1cdcccabec3c9a5b.png'),
-    MaisPedidos('Vikings', '',
-        'https://cdn.discordapp.com/attachments/809775517493624852/910736208626323497/22132_800x800.png')
-  ]);
+  List<MaisPedidos> maispedidoslist = [];
+
+  void atualizar() {
+    FirebaseFirestore.instance
+        .collection('mais_pedidos')
+        .get()
+        .then((QuerySnapshot querySnapshot) {
+      querySnapshot.docs.forEach((doc) {
+        maispedidoslist
+            .add(MaisPedidos(doc['nome'], doc['estado'], doc['fotourl']));
+      });
+      appStore.dispatcher(AlterarMaisPedidos(
+          maispedidosData: MaisPedidosModel(maispedidoslist: maispedidoslist)));
+    });
+  }
 }
