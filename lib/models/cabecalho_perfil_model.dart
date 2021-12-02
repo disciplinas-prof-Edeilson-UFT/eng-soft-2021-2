@@ -1,13 +1,6 @@
 class CabecalhoPerfil {
+  final String img_url;
 
-  final String nome;
-  final String imgUrlCabecalho;
-
-  CabecalhoPerfil(this.nome,this.imgUrlCabecalho);
-
-  toFirestore() {
-    // TODO
-  }
-
+  const CabecalhoPerfil({ this.img_url = '' });
+  
 }
-

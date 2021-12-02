@@ -17,7 +17,7 @@ class _MecanismodeBusca extends State<MecanismodeBusca> {
           child: Column(
             children: <Widget>[
               Padding(
-                padding:const EdgeInsets.only(top: 10),
+                padding: const EdgeInsets.only(top: 10),
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),

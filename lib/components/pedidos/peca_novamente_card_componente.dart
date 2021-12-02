@@ -50,7 +50,7 @@ class PecaNovamenteCard extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    child:  Text(quantidade.toString()),
+                    child: Text(quantidade.toString()),
                     padding: const EdgeInsets.all(3),
                     decoration: BoxDecoration(
                         color: AppCores.cinza1,
@@ -72,8 +72,9 @@ class PecaNovamenteCard extends StatelessWidget {
               Container(
                 width: MediaQuery.of(context).size.width * 1,
                 height: 45,
-                decoration:
-                    const BoxDecoration(color: AppCores.vermelhoPrincipal, borderRadius: BorderRadius.all(Radius.circular(5))),
+                decoration: const BoxDecoration(
+                    color: AppCores.vermelhoPrincipal,
+                    borderRadius: BorderRadius.all(Radius.circular(5))),
                 child: const Center(
                     child: Text('Adicionar à sacola',
                         style: TextStyle(

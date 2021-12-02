@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ifood_engenharia_de_software/components/busca/banner_de_categoria.dart';
+import 'package:ifood_engenharia_de_software/components/busca/banner_de_categoria_componente.dart';
 import 'package:ifood_engenharia_de_software/components/busca/caixa_de_pesquisa_componente.dart';
+import '../app_store.dart';
 
 class PaginaBusca extends StatefulWidget {
   const PaginaBusca({Key? key}) : super(key: key);
@@ -14,21 +15,29 @@ class _PaginaBuscaState extends State<PaginaBusca>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(children: const [
-        MecanismodeBusca(),
-        Align(
-            alignment: Alignment.center,
-            child: SizedBox(
-                width: 340,
-                child: BannersDeCategorias(listacategoria: [
-                  Categoria('express'),
-                  Categoria('Mercado'),
-                  Categoria('Farmácia'),
-                  Categoria('Bebidas'),
-                  Categoria('Pizza'),
-                  Categoria('Lanches')
-                ])))
-      ]),
-    );
+        body: Column(children: [
+      const MecanismodeBusca(),
+      
+      const Align(
+        alignment: Alignment.topLeft,
+        child:Padding(
+         padding: EdgeInsets.only(left: 20,bottom:30),
+          child:Text(
+          'Categorias',
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+          )
+        )
+      ),
+      AnimatedBuilder(
+          animation: appStore,
+          builder: (_, __) {
+            return SizedBox(
+              width:390,
+              child:BannersDeCategorias(listacategoria: 
+                appStore.state.bannerdecategoriaData.listacategoria
+              )  
+            );
+          })
+    ]));
   }
 }
