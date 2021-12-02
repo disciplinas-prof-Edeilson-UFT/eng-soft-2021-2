@@ -8,13 +8,7 @@ class Lojas {
 class UltimasLojasModel {
   final List<Lojas> listadaslojas;
 
-  const UltimasLojasModel(this.listadaslojas);
+  const UltimasLojasModel(
+   {this.listadaslojas= const [Lojas('', '')]});
 
-  fromFirestore() {
-    // TODO
-  }
-
-  toFirestore() {
-    // TODO
-  }
 }

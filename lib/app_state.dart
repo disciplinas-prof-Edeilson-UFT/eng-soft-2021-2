@@ -56,13 +56,7 @@ class AppState {
         MaisPedidos('Vikings', '',
             'https://cdn.discordapp.com/attachments/809775517493624852/910736208626323497/22132_800x800.png')
       ]),
-        this.ultimaslojasData = const UltimasLojasModel(
-      [
-      Lojas("McDonald's",'https://i.imgur.com/L8VcJbD.png'),
-      Lojas('Burger King','https://i.imgur.com/BhBX8HH.png'),
-      Lojas('Giraffas','https://i.imgur.com/0I9W33L.png'),
-      Lojas('Subway','https://i.imgur.com/rYyDTK6.png'),
-      ]),
+        this.ultimaslojasData = const UltimasLojasModel(),
       
       this.abasinferioresData = const AbasInferioresModel([
         Abas("Ajuda",'https://imgur.com/NgRmdFM.png'),

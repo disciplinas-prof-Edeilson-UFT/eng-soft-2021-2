@@ -9,13 +9,20 @@ import 'actions/abas_inferiores_perfil_action.dart';
 
 AppState reducer(AppState state, dynamic action) {
   if (action is AlterarPagina) {
+    if (action.pagina == 0){
+      
+    }
     if (action.pagina == 2) {
       AtualizarPecaNovamente().atualizar();
     } else if (action.pagina == 0) {
       AlterarCard().atualizar();
+      AlterarUltimasLojas().atualizar();
     }
     return AppState(
-        paginaAtual: action.pagina, pecaNovamenteData: state.pecaNovamenteData);
+        paginaAtual: action.pagina, 
+        pecaNovamenteData: state.pecaNovamenteData,
+        ultimaslojasData: state.ultimaslojasData
+        );
   } else if (action is AtualizarPecaNovamente) {
     return AppState(
         paginaAtual: state.paginaAtual,

@@ -1,16 +1,27 @@
-import 'package:ifood_engenharia_de_software/models/ultimas_lojas_model.dart';
+import '../models/ultimas_lojas_model.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:ifood_engenharia_de_software/app_store.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class AlterarUltimasLojas {
-  final List<Lojas> listadaslojas;
+  FirebaseFirestore query = FirebaseFirestore.instance;
+  final UltimasLojasModel ultimaslojasData;
 
-  AlterarUltimasLojas(this.listadaslojas);
+  AlterarUltimasLojas(
+      {this.ultimaslojasData = const UltimasLojasModel()});
 
-  UltimasLojasModel ultimaslojasData = const UltimasLojasModel(
-    [
-     Lojas("McDonald's",'https://i.imgur.com/L8VcJbD.png'),
-      Lojas('Burger King','https://i.imgur.com/BhBX8HH.png'),
-      Lojas('Giraffas','https://i.imgur.com/0I9W33L.png'),
-      Lojas('Subway','https://i.imgur.com/rYyDTK6.png'),
-    ]
-  );
+  List<Lojas> listadaslojas = [];
+  void atualizar() {
+    query
+        .collection('lojas')
+        .get()
+        .then((QuerySnapshot querySnapshot) {
+          querySnapshot.docs.forEach((doc) {
+            listadaslojas.add(Lojas(doc['nome'], doc['img_url'])
+            );
+          }); 
+          appStore.dispatcher(AlterarUltimasLojas(ultimaslojasData: UltimasLojasModel(listadaslojas: listadaslojas)));
+    }); 
+  }
+  
 }
