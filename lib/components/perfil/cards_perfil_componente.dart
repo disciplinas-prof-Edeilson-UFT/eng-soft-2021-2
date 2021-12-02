@@ -35,7 +35,7 @@ class OpcoesPerfil extends StatelessWidget {
                         children: <Widget>[
                           opcoespefils[index].icon,
                           Padding(
-                            padding: const EdgeInsets.only(left: 13.0),
+                            padding: const EdgeInsets.only(left: 20.0),
                             child: Text(
                               opcoespefils[index].nomeArea + "\n\n",
                               style: const TextStyle(
