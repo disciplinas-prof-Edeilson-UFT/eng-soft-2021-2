@@ -33,8 +33,8 @@ class _PaginaBuscaState extends State<PaginaBusca>
           builder: (_, __) {
             return SizedBox(
               width:390,
-              child:BannersDeCategorias(listacategoria: 
-                appStore.state.bannerdecategoriaData.listacategoria
+              child:BannersDeCategorias(nome: 
+                appStore.state.bannerdecategoriaData.nome, imgurl:appStore.state.bannerdecategoriaData.imgurl
               )  
             );
           })

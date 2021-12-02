@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/models/banner_de_categoria_model.dart';
 
 class BannersDeCategorias extends StatelessWidget {
-  final List<CategoriaBanner> listacategoria;
-  
-  const BannersDeCategorias({Key? key, required this.listacategoria})
+  final String nome;
+  final String imgurl;
+
+  const BannersDeCategorias({Key? key, required this.nome, required this.imgurl})
       : super(key: key);
 
   @override
@@ -19,7 +20,7 @@ class BannersDeCategorias extends StatelessWidget {
             crossAxisSpacing: 10,
             mainAxisSpacing: 10),
         shrinkWrap: true,
-        itemCount: listacategoria.length,
+
         itemBuilder: (BuildContext context, index) {
           return Container(
             height: 100,
@@ -29,13 +30,13 @@ class BannersDeCategorias extends StatelessWidget {
               color: Colors.grey[100],
             image:  DecorationImage(
               fit: BoxFit.fill,   
-              image: NetworkImage(listacategoria[index].imgurl)
+              image: NetworkImage(imgurl)
             ),
           ),  
 
             child:Padding(
                 padding: const EdgeInsets.all(5),
-                child:Text(listacategoria[index].nome,
+                child:Text(nome,
                   style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white),)
                 )
           );
