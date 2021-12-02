@@ -5,7 +5,6 @@ import '../app_store.dart';
 
 class PaginaBusca extends StatefulWidget {
   const PaginaBusca({Key? key}) : super(key: key);
-
   @override
   _PaginaBuscaState createState() => _PaginaBuscaState();
 }
@@ -17,26 +16,22 @@ class _PaginaBuscaState extends State<PaginaBusca>
     return Scaffold(
         body: Column(children: [
       const MecanismodeBusca(),
-      
       const Align(
-        alignment: Alignment.topLeft,
-        child:Padding(
-         padding: EdgeInsets.only(left: 20,bottom:30),
-          child:Text(
-          'Categorias',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-          )
-        )
-      ),
+          alignment: Alignment.topLeft,
+          child: Padding(
+              padding: EdgeInsets.only(left: 20, bottom: 30),
+              child: Text(
+                'Categorias',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+              ))),
       AnimatedBuilder(
           animation: appStore,
           builder: (_, __) {
             return SizedBox(
-              width:390,
-              child:BannersDeCategorias(nome: 
-                appStore.state.bannerdecategoriaData.nome, imgurl:appStore.state.bannerdecategoriaData.imgurl
-              )  
-            );
+                width: 390,
+                child: BannersDeCategorias(
+                    listacategoria:
+                        appStore.state.bannerdecategoriaData.listacategoria));
           })
     ]));
   }

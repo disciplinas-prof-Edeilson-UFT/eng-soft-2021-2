@@ -1,17 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ifood_engenharia_de_software/app_store.dart';
 import 'package:ifood_engenharia_de_software/models/banner_de_categoria_model.dart';
 
 class BannersDeCategorias extends StatelessWidget {
-  final String nome;
-  final String imgurl;
+  final List<CategoriaBanner> listacategoria;
 
-  const BannersDeCategorias({Key? key, required this.nome, required this.imgurl})
+  const BannersDeCategorias({Key? key, required this.listacategoria})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-
     return GridView.builder(
         scrollDirection: Axis.vertical,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -20,7 +19,7 @@ class BannersDeCategorias extends StatelessWidget {
             crossAxisSpacing: 10,
             mainAxisSpacing: 10),
         shrinkWrap: true,
-
+        itemCount: listacategoria.length,
         itemBuilder: (BuildContext context, index) {
           return Container(
             height: 100,
@@ -28,48 +27,26 @@ class BannersDeCategorias extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(5),
               color: Colors.grey[100],
-            image:  DecorationImage(
-              fit: BoxFit.fill,   
-              image: NetworkImage(imgurl)
+              image: DecorationImage(
+                  fit: BoxFit.fill,
+                  image: NetworkImage(listacategoria[index].imgurl)),
             ),
-          ),  
-
-            child:Padding(
+            child: Padding(
                 padding: const EdgeInsets.all(5),
-                child:Text(nome,
-                  style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white),)
-                )
+                child: Column(children: [
+                  /* Image.network(
+                    listacategoria[index].imgurl,
+                    scale: 1.0,
+                  ), */
+                  Text(
+                    listacategoria[index].nome,
+                    style: const TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  )
+                ])),
           );
-        }
-    );
+        });
   }
 }
-
-              
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

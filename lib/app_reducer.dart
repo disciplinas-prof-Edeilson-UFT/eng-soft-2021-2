@@ -7,7 +7,12 @@ import 'actions/banner_de_categoria_action.dart';
 
 AppState reducer(AppState state, dynamic action) {
   if (action is AlterarPagina) {
-    return AppState(paginaAtual: action.pagina);
+    if (action.pagina == 1) {
+      AlterarBannerDeCategoria().atualizaModel();
+    }
+    return AppState(
+        paginaAtual: action.pagina,
+        bannerdecategoriaData: state.bannerdecategoriaData);
   } else if (action is AlterarMaisPedidos) {
     return AppState(
         paginaAtual: state.paginaAtual,
@@ -16,16 +21,15 @@ AppState reducer(AppState state, dynamic action) {
     return AppState(
         paginaAtual: state.paginaAtual,
         pecaNovamenteData: action.pecaNovamenteData);
-  } else if(action is AlterarBannerDeCategoria) {
-      return AppState(   
+  } else if (action is AlterarBannerDeCategoria) {
+    return AppState(
         paginaAtual: state.paginaAtual,
         bannerdecategoriaData: action.bannerdecategoriaData);
   } else if (action is AlterarCard) {
     return AppState(
         paginaAtual: state.paginaAtual,
-        cardcategoriaData:action.cardcategoriaData);
-  }else {
-
+        cardcategoriaData: action.cardcategoriaData);
+  } else {
     return AppState();
   }
 }
