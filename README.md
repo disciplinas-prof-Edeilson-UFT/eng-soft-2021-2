@@ -5,7 +5,7 @@
 ### Semana 3 e 4 - 18/11/2021 - 02/12/2021
 
 - [ ] R2 - Tela de pedidos
-	 - [x] T5 - Resgatando dados do firestore - Lindomar Rodrigues
+	 - [x] T5 - Resgatando dados do firestore do R2/T4 - Lindomar Rodrigues
 - [ ] R4 - Firebase
 	- [x] Documentos cadastrados(estáticos) - Marcos Gilmário
 
