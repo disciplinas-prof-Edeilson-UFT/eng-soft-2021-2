@@ -7,6 +7,7 @@ import 'models/banner_de_categoria_model.dart';
 import 'models/card_da_categoria_componente_model.dart';
 import 'models/mais_pedidos_por_vc_model.dart';
 import 'models/peca_novamente_model.dart';
+import 'models/abas_inferiores_model.dart';
 
 class AppState {
   final int paginaAtual;
@@ -15,6 +16,7 @@ class AppState {
   final MaisPedidosModel maispedidosData;
   final UltimasLojasModel ultimaslojasData;
   final BannerDeCategoriaModel bannerdecategoriaData;
+  final AbasInferioresModel abasinferioresData;
 
   AppState(
       {this.paginaAtual = 0,
@@ -62,5 +64,12 @@ class AppState {
       Lojas('Subway','https://i.imgur.com/rYyDTK6.png'),
       ]),
       
+      this.abasinferioresData = const AbasInferioresModel([
+        Abas("Ajuda",'https://imgur.com/NgRmdFM.png'),
+        Abas("Configurações",'https://imgur.com/TseB9Qd.png'),
+        Abas("Segurança",'https://imgur.com/bb3Vz0Y.png'),
+        Abas("Usar no carro",'https://imgur.com/yK7SRwg.png'),
+        Abas("Sugerir restaurantes",'https://imgur.com/n9yeTcC.png'),
+      ]),
       });
 }

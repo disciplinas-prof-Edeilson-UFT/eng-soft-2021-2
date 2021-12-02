@@ -5,6 +5,7 @@ import 'actions/navegacao_rodape_action.dart';
 import 'actions/peca_novamente_action.dart';
 import 'actions/ultimas_lojas_action.dart';
 import 'app_state.dart';
+import 'actions/abas_inferiores_perfil_action.dart';
 
 AppState reducer(AppState state, dynamic action) {
   if (action is AlterarPagina) {
@@ -30,12 +31,17 @@ AppState reducer(AppState state, dynamic action) {
   } else if (action is AlterarCard) {
     return AppState(
         paginaAtual: state.paginaAtual,
-        cardcategoriaData: action.cardcategoriaData);
-  } else if (action is AlterarUltimasLojas) {
+        cardcategoriaData:action.cardcategoriaData);
+  }else if (action is AlterarUltimasLojas) {
     return AppState(
         paginaAtual: state.paginaAtual,
-        ultimaslojasData: action.ultimaslojasData);
-  } else {
+        ultimaslojasData:action.ultimaslojasData);
+  }else if(action is AlterarAbasInferioresPerfil){
+    return AppState(
+      paginaAtual: state.paginaAtual,
+      abasinferioresData:action.abasinferioresData);
+  }else {
+
     return AppState();
   }
 }
