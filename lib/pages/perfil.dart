@@ -14,19 +14,19 @@ class _PaginaPerfilState extends State<PaginaPerfil>
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      body: Column(
+      body: ListView(
         children: const [
-          Expanded(
-              child: OpcoesPerfil(opcoespefils: [
-                Opcoes("Chats", "Minhas conversas", Icon(Icons.chat_outlined)),
+          Expanded(child: OpcoesPerfil(opcoespefils: [
+              Opcoes("Chats", "Minhas conversas", Icon(Icons.chat_outlined)),
                 Opcoes("Notificações", "Minha central", Icon(Icons.notifications_outlined)),
                 Opcoes("Carteira", "Meu saldo e QR code", Icon(Icons.account_balance_wallet_outlined)),
                 Opcoes("Clube iFood", "Meus pacotes de desconto", Icon(Icons.confirmation_number_outlined)),
                 Opcoes("Cupons", "Meus cupons de desconto", Icon(Icons.local_activity_outlined)),
                 Opcoes("Fidelidade", "Minhas fidelidades", Icon(Icons.star_rate_outlined)),
                 Opcoes("Favoritos", "Meus locais favoritos", Icon(Icons.favorite_outlined)),
-              ]),
-          ),
+                Opcoes("Favoritos", "Meus locais favoritos", Icon(Icons.favorite_outlined)),
+                Opcoes("Favoritos", "Meus locais favoritos", Icon(Icons.favorite_outlined)),
+          ]))
         ],
       ),
     );

@@ -2,12 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
-class Opcoes{
+class Opcoes {
   final String nomeArea;
   final String desc;
   final Icon icon;
 
-  const Opcoes(this.nomeArea,this.desc, this.icon);
+  const Opcoes(this.nomeArea, this.desc, this.icon);
 }
 
 class OpcoesPerfil extends StatelessWidget {
@@ -17,10 +17,10 @@ class OpcoesPerfil extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [
-          ListView.builder(
+    return Column(
+      children: [
+        SizedBox(
+          child: ListView.builder(
               shrinkWrap: true,
               scrollDirection: Axis.vertical,
               itemCount: opcoespefils.length,
@@ -45,16 +45,16 @@ class OpcoesPerfil extends StatelessWidget {
                             ),
                           ),
                           Row(
-                            children: <Widget> [
+                            children: <Widget>[
                               Padding(
-                                  padding: const EdgeInsets.only(left: 2),
-                                  child: Text(
-                                    opcoespefils[index].desc,
-                                    style: const TextStyle(
-                                        fontWeight: FontWeight.w500,
-                                        fontSize: 15,
-                                        color: Colors.black54),
-                                  ),
+                                padding: const EdgeInsets.only(left: 2),
+                                child: Text(
+                                  opcoespefils[index].desc,
+                                  style: const TextStyle(
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 15,
+                                      color: Colors.black54),
+                                ),
                               ),
                             ],
                           ),
@@ -65,18 +65,18 @@ class OpcoesPerfil extends StatelessWidget {
                       ),
                       decoration: const BoxDecoration(
                           border: Border(
-                            bottom: BorderSide(
-                              color: Colors.black12,
-                              width: 0.6,
-                            ),
-                          )),
+                        bottom: BorderSide(
+                          color: Colors.black12,
+                          width: 0.6,
+                        ),
+                      )),
                       padding: const EdgeInsets.only(bottom: 10, top: 10),
                     ),
                   ),
                 );
-            }),
-        ],
-      ),
+              }),
+        ),
+      ],
     );
   }
 }
