@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
+import 'models/ultimas_lojas_model.dart';
+
 
 import 'models/banner_de_categoria_model.dart';
 import 'models/card_da_categoria_componente_model.dart';
@@ -11,6 +13,7 @@ class AppState {
   final PecaNovamenteModel pecaNovamenteData;
   final CategoriaModel cardcategoriaData;
   final MaisPedidosModel maispedidosData;
+  final UltimasLojasModel ultimaslojasData;
   final BannerDeCategoriaModel bannerdecategoriaData;
 
   AppState(
@@ -64,5 +67,14 @@ class AppState {
             'https://media.discordapp.net/attachments/809775517493624852/910736507881553931/b891ddaf349a66bf1cdcccabec3c9a5b.png'),
         MaisPedidos('Vikings', '',
             'https://cdn.discordapp.com/attachments/809775517493624852/910736208626323497/22132_800x800.png')
-      ])});
+      ]),
+        this.ultimaslojasData = const UltimasLojasModel(
+      [
+      Lojas("McDonald's",'https://i.imgur.com/L8VcJbD.png'),
+      Lojas('Burger King','https://i.imgur.com/BhBX8HH.png'),
+      Lojas('Giraffas','https://i.imgur.com/0I9W33L.png'),
+      Lojas('Subway','https://i.imgur.com/rYyDTK6.png'),
+      ]),
+      
+      });
 }
