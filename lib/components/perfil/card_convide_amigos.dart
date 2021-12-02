@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ifood_engenharia_de_software/components/perfil/pag_convide.dart';
+import 'package:ifood_engenharia_de_software/pages/pag_convide.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class CardConvidar extends StatefulWidget {
@@ -24,18 +24,14 @@ class _CardConvidarState extends State<CardConvidar>
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.of(context).pushReplacement(MaterialPageRoute(
+        Navigator.of(context).push(MaterialPageRoute(
           builder: (context) => PageConvidar(user: _currentUser),
         ));
       },
       child: FractionallySizedBox(
         heightFactor: 0.4,
         child: Container(
-<<<<<<< HEAD
           margin: const EdgeInsets.symmetric(horizontal: 20),
-=======
-          margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
->>>>>>> 2b26370 (R3/T4 - Card convide seus amigos complemento + Model)
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(6.0),
@@ -55,11 +51,7 @@ class _CardConvidarState extends State<CardConvidar>
                 Row(
                   children: [
                     Container(
-<<<<<<< HEAD
                       width: 35.0,
-=======
-                      width: 40.0,
->>>>>>> 2b26370 (R3/T4 - Card convide seus amigos complemento + Model)
                       color: Colors.white,
                       child: Image.network('https://i.imgur.com/q3Fau41.png'),
                     ),

@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ifood_engenharia_de_software/actions/navegacao_rodape_action.dart';
-import 'package:ifood_engenharia_de_software/app_store.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 import 'package:share/share.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-
 import 'package:flutter/widgets.dart';
 
 class PageConvidar extends StatefulWidget {
@@ -32,25 +29,9 @@ class _PageConvidarState extends State<PageConvidar>
         centerTitle: false,
         backgroundColor: AppCores.branco,
         foregroundColor: AppCores.vermelhoPrincipal,
-        title: const Text('Convide amigos',
-            style: TextStyle(color: AppCores.vermelhoPrincipal)),
       ),
-      resizeToAvoidBottomInset: false,
       body: Column(
         children: <Widget>[
-          Container(
-            padding: const EdgeInsets.only(top: 20, left: 10),
-            alignment: Alignment.centerLeft,
-            child: GestureDetector(
-              onTap: () {
-                appStore.dispatcher(AlterarPagina(3));
-              },
-              child: const Icon(
-                Icons.arrow_back_ios_outlined,
-                color: Colors.red,
-              ),
-            ),
-          ),
           const SizedBox(height: 50.0),
           Container(
             width: 80.0,
@@ -140,7 +121,7 @@ class _PageConvidarState extends State<PageConvidar>
                 ),
                 onPressed: () {
                   Share.share(
-                      'Bateu aquela fome? ${_currentUser.displayName} e nós do #eng-soft-2021-2 vamos te ajudar! Insira o cupom 5ELJAE12Q9 e ganhe R\$ 15 de desconto na sua primeira compra pelo app. https://ifoodbr.onelink.me/F4X4/mgm?mgm_code=5ELJAE12Q9');
+                      'Bateu aquela fome? ${_currentUser.displayName} e nós do #eng-soft-2021-2 vamos te ajudar! Insira o cupom 5ELJAE12Q9 e ganhe R\$ 15 de desconto na sua primeira compra pelo app.');
                 },
               ),
             ),
