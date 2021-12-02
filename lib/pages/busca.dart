@@ -3,7 +3,6 @@ import 'package:ifood_engenharia_de_software/components/busca/caixa_de_pesquisa_
 
 class PaginaBusca extends StatefulWidget {
   const PaginaBusca({Key? key}) : super(key: key);
-
   @override
   _PaginaBuscaState createState() => _PaginaBuscaState();
 }
