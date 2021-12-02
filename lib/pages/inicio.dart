@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/components/inicio/card_da_categoria_componente.dart';
-import 'package:ifood_engenharia_de_software/components/inicio/menu_de_redirecionamento.dart';
 import 'package:ifood_engenharia_de_software/components/inicio/mercadotoque_aqui_e_escolha_os_itens.dart';
 import 'package:ifood_engenharia_de_software/components/inicio/ultimas_lojas_componente.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
+import 'package:ifood_engenharia_de_software/app_store.dart';
 
 class PaginaInicio extends StatefulWidget {
   const PaginaInicio({Key? key}) : super(key: key);
@@ -17,30 +17,30 @@ class _PaginaInicioState extends State<PaginaInicio>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(children: const [
-        Text('inicio',
+      body: Column(children: [
+        const Text('inicio',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
-        Menu(),
-        CategoriaCard(categoriaLista: [
-          Categoria('Pizza', AppCores.vermelhoPrincipal),
-          Categoria('Mercado', Color(0xffb5cf47)),
-          Categoria('Vale Alimentacao', Color(0xffA553BE)),
-          Categoria('Sorvete', Color(0xffF8879B)),
-          Categoria('Hamburguer', Color(0xffA553BE)),
-          Categoria('Doces', Color(0xffF8879B))
-        ]),
-        Expanded(
-            child: UltimasLojasRestaurante(
-          listalojas: [
-            'Loja exemplo1',
-            'Loja exemplo2',
-            'Loja exemplo3',
-            'Loja exemplo4'
-          ],
-        )),
-        Expanded(
-            child: CardEscolha(
-            ))
+        const Menu(),
+
+        AnimatedBuilder(
+          animation: appStore,
+          builder: (_, index) {
+             return CategoriaCard(categoriaLista:
+
+              appStore.state.cardcategoriaData.categoriaLista
+
+            );}),
+
+
+
+        AnimatedBuilder(
+              animation: appStore,
+              builder: (_, index) {
+                return UltimasLojasRestaurante(
+                    listalojas:
+                        appStore.state.ultimaslojasData.listadaslojas);
+              }),
+          Expanded(child: CardEscolha())
       ]),
     );
   }

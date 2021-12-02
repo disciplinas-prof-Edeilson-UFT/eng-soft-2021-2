@@ -5,9 +5,13 @@ import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 class PecaNovamenteCard extends StatelessWidget {
   final int quantidade;
   final String produto;
+  final String logoEstabelecimentoImgUrl;
 
   const PecaNovamenteCard(
-      {Key? key, required this.quantidade, required this.produto})
+      {Key? key,
+      required this.quantidade,
+      required this.produto,
+      required this.logoEstabelecimentoImgUrl})
       : super(key: key);
 
   @override
@@ -39,18 +43,19 @@ class PecaNovamenteCard extends StatelessWidget {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  Text(
+                children:  [
+                  const Text(
                     'Peça de novo',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
-                  Text('logo')
+                  Image.network(logoEstabelecimentoImgUrl, width: 50,)
+
                 ],
               ),
               Row(
                 children: [
                   Container(
-                    child:  Text(quantidade.toString()),
+                    child: Text(quantidade.toString()),
                     padding: const EdgeInsets.all(3),
                     decoration: BoxDecoration(
                         color: AppCores.cinza1,
@@ -72,8 +77,9 @@ class PecaNovamenteCard extends StatelessWidget {
               Container(
                 width: MediaQuery.of(context).size.width * 1,
                 height: 45,
-                decoration:
-                    const BoxDecoration(color: AppCores.vermelhoPrincipal, borderRadius: BorderRadius.all(Radius.circular(5))),
+                decoration: const BoxDecoration(
+                    color: AppCores.vermelhoPrincipal,
+                    borderRadius: BorderRadius.all(Radius.circular(5))),
                 child: const Center(
                     child: Text('Adicionar à sacola',
                         style: TextStyle(

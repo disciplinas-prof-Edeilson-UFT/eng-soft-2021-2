@@ -10,19 +10,21 @@ analyzer:
     - non-nullable
 
 environment:
-  sdk: ">=2.13.0 <3.0.0"
+  sdk: '>=2.13.0 <3.0.0'
 
 dependencies:
+  get: ^4.3.8
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  firebase_core: ^0.4.3+2
-  firebase_auth: ^0.16.1
-  cloud_firestore: ^0.13.7
-
+  firebase_core: ^1.10.0
+  firebase_analytics: ^8.3.4
+  firebase_auth: ^3.2.0
+  cloud_firestore: ^3.1.0
+  flutter_barcode_scanner: ^2.0.0
+  
 dev_dependencies:
   flutter_lints: ^1.0.4
 
 flutter:
   uses-material-design: true
-
