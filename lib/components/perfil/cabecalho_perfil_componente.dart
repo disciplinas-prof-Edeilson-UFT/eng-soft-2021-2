@@ -78,14 +78,3 @@ class _TopoPaginaState extends State<TopoPagina>
         ));
   }
 }
-
-/**
-Padding(
-              padding: const EdgeInsets.only(top: 35, bottom: 45, right: 20),
-              child: Image.network(
-                "https://imgur.com/EPUWxPP.png",
-                height: 50,
-              ),
-            ),
-
-*/
