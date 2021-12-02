@@ -6,10 +6,8 @@ import 'package:get/get.dart';
 import 'package:ifood_engenharia_de_software/app_store.dart';
 import 'package:ifood_engenharia_de_software/components/busca/banner_de_categoria_componente.dart';
 
-
 class MecanismodeBusca extends StatefulWidget {
-  
-  const MecanismodeBusca({Key? key }) : super(key: key);
+  const MecanismodeBusca({Key? key}) : super(key: key);
   @override
   _MecanismodeBusca createState() => _MecanismodeBusca();
 }
@@ -57,6 +55,7 @@ class _MecanismodeBusca extends State<MecanismodeBusca> {
         },
       );
     }
+
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -115,24 +114,24 @@ class _MecanismodeBusca extends State<MecanismodeBusca> {
           : SingleChildScrollView(
               child: Column(children: [
                 const Padding(padding: EdgeInsets.all(20.0)),
-                
-               const Align(
-          alignment: Alignment.topLeft,
-          child: Padding(
-              padding: EdgeInsets.only(left: 20, bottom: 30),
-              child: Text(
-                'Categorias',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-              ))),
-      AnimatedBuilder(
-          animation: appStore,
-          builder: (_, __) {
-            return SizedBox(
-                width: 390,
-                child: BannersDeCategorias(
-                    listacategoria:
-                        appStore.state.bannerdecategoriaData.listacategoria));
-                  })
+                const Align(
+                    alignment: Alignment.topLeft,
+                    child: Padding(
+                        padding: EdgeInsets.only(left: 20, bottom: 30),
+                        child: Text(
+                          'Categorias',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 16),
+                        ))),
+                AnimatedBuilder(
+                    animation: appStore,
+                    builder: (_, __) {
+                      return SizedBox(
+                          width: 400,
+                          child: BannersDeCategorias(
+                              listacategoria: appStore
+                                  .state.bannerdecategoriaData.listacategoria));
+                    })
               ]),
             ),
     );
