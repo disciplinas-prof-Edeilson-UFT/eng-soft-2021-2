@@ -33,15 +33,13 @@ class _PaginaInicioState extends State<PaginaInicio>
 
 
 
-        const Expanded(
-            child: UltimasLojasRestaurante(
-          listalojas: [
-            'Loja exemplo1',
-            'Loja exemplo2',
-            'Loja exemplo3',
-            'Loja exemplo4'
-          ],
-        ))
+        AnimatedBuilder(
+              animation: appStore,
+              builder: (_, index) {
+                return UltimasLojasRestaurante(
+                    listalojas:
+                        appStore.state.ultimaslojasData.listadaslojas);
+              }),
       ]),
     );
   }

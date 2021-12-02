@@ -4,6 +4,7 @@ import 'actions/peca_novamente_action.dart';
 import 'actions/card_da_categoria_componente_action.dart';
 import 'app_state.dart';
 import 'actions/banner_de_categoria_action.dart';
+import 'actions/ultimas_lojas_action.dart';
 
 AppState reducer(AppState state, dynamic action) {
   if (action is AlterarPagina) {
@@ -24,6 +25,10 @@ AppState reducer(AppState state, dynamic action) {
     return AppState(
         paginaAtual: state.paginaAtual,
         cardcategoriaData:action.cardcategoriaData);
+  }else if (action is AlterarUltimasLojas) {
+    return AppState(
+        paginaAtual: state.paginaAtual,
+        ultimaslojasData:action.ultimaslojasData);
   }else {
 
     return AppState();
