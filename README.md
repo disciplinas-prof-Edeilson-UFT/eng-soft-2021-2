@@ -2,7 +2,15 @@
 
 ## Etapa de desenvolvimento
 
-### Semana 2 - 11/11/2021 - 18/11/20213
+### Semana 3 e 4 - 18/11/2021 - 02/12/2021
+
+- [ ] R2 - Tela de pedidos
+	 - [x] T5 - Resgatando dados do firestore - Lindomar Rodrigues
+- [ ] R4 - Firebase
+	- [x] Documentos cadastrados(estáticos) - Marcos Gilmário
+
+
+### Semana 2 - 11/11/2021 - 18/11/2021
 
 - [ ] R0 - Tela de início
 	 - [x] T6 - state, model e action do R0/T1 - Pablo henrique
