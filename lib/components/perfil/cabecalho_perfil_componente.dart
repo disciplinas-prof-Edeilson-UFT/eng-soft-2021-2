@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
@@ -78,14 +77,3 @@ class _TopoPaginaState extends State<TopoPagina>
         ));
   }
 }
-
-/**
-Padding(
-              padding: const EdgeInsets.only(top: 35, bottom: 45, right: 20),
-              child: Image.network(
-                "https://imgur.com/EPUWxPP.png",
-                height: 50,
-              ),
-            ),
-
-*/
