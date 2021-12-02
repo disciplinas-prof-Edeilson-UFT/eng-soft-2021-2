@@ -5,9 +5,8 @@ import 'package:ifood_engenharia_de_software/components/perfil/abas_inferiores_d
 import 'package:ifood_engenharia_de_software/components/perfil/cabecalho_perfil_componente.dart';
 import 'package:ifood_engenharia_de_software/utilities/fire_auth.dart';
 
-import 'login_page.dart';
-
 import '../components/perfil/card_convide_amigos.dart';
+import 'login_page.dart';
 
 class PaginaPerfil extends StatefulWidget {
   final User user;

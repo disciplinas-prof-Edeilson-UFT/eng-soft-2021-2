@@ -7,8 +7,8 @@ class Categoria {
 
   const Categoria(this.nome, this.cor, this.img_url);
 }
-class CategoriaModel {
 
+class CategoriaModel {
   final List<Categoria> categoriaLista;
 
   const CategoriaModel(this.categoriaLista);
