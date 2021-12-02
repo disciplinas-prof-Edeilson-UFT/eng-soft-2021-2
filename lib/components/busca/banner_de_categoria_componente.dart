@@ -13,6 +13,7 @@ class BannersDeCategorias extends StatelessWidget {
 
     return GridView.builder(
         scrollDirection: Axis.vertical,
+       padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             childAspectRatio: (4 / 2),
