@@ -1,15 +1,20 @@
 class CategoriaBanner {
   final String nome;
-
-  const CategoriaBanner(this.nome);
+  final String imgurl;
+  const CategoriaBanner(this.nome,this.imgurl);
 }
 
 class BannerDeCategoriaModel {
+  
   final List<CategoriaBanner> listacategoria;
 
-  const BannerDeCategoriaModel(this.listacategoria);
+  const BannerDeCategoriaModel( this.listacategoria);
 
-  fromFirestore() {}
+  fromFirestore() {
+    
+  }
 
-  toFirestore() {}
+  toFirestore() {
+
+  }
 }

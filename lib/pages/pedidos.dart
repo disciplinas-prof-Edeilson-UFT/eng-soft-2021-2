@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/components/pedidos/historico_componente.dart';
 import 'package:ifood_engenharia_de_software/components/pedidos/peca_novamente_card_componente.dart';
+import 'package:ifood_engenharia_de_software/components/pedidos/mais_pedidos_por_vc.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
+import 'package:ifood_engenharia_de_software/app_store.dart';
 
 import '../app_store.dart';
 
@@ -34,15 +36,31 @@ class _PaginaPedidosState extends State<PaginaPedidos>
                 animation: appStore,
                 builder: (_, __) {
                   return PecaNovamenteCard(
-                    quantidade:
-                        appStore.state.pecaNovamenteData.pedidos[0].quantidade,
+                    quantidade: appStore.state.pecaNovamenteData.pedidos[0].quantidade,
                     produto: appStore.state.pecaNovamenteData.pedidos[0].nome,
+                    logoEstabelecimentoImgUrl: appStore.state.pecaNovamenteData.urlLogoRestaurante,
                   );
                 },
               )
             ]),
           ),
           const SizedBox(height: 100),
+          const Align(
+              alignment: Alignment.topLeft,
+              child: Padding(
+                padding: EdgeInsets.only(left: 15.0),
+                child: Text(
+                  'Mais Pedidos Por Você',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                ),
+              )),
+          AnimatedBuilder(
+              animation: appStore,
+              builder: (_, index) {
+                return MaisPedidosPorVcCard(
+                    maispedidoslist:
+                        appStore.state.maispedidosData.maispedidoslist);
+              }),
           const Expanded(child: HistoricoCard())
         ],
       ),

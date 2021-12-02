@@ -7,6 +7,7 @@ import 'package:ifood_engenharia_de_software/pages/busca.dart';
 import 'package:ifood_engenharia_de_software/pages/inicio.dart';
 import 'package:ifood_engenharia_de_software/pages/pedidos.dart';
 import 'package:ifood_engenharia_de_software/pages/perfil.dart';
+import 'package:ifood_engenharia_de_software/pages/register_page.dart';
 
 class LayoutDefault extends StatefulWidget {
   final User user;
@@ -44,6 +45,8 @@ class _LayoutDefaultState extends State<LayoutDefault>
               return PaginaPerfil(
                 user: _currentUser,
               );
+            } else if (appStore.state.paginaAtual == 4) {
+              return const RegisterPage();
             } else {
               return const Text('Error!!');
             }

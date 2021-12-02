@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:ifood_engenharia_de_software/components/perfil/abas_inferiores_do_perfil_componente.dart';
 import 'package:ifood_engenharia_de_software/components/perfil/cabecalho_perfil_componente.dart';
-import 'package:ifood_engenharia_de_software/utils/fire_auth.dart';
+import 'package:ifood_engenharia_de_software/utilities/fire_auth.dart';
 
 import '../components/perfil/card_convide_amigos.dart';
 import 'login_page.dart';
