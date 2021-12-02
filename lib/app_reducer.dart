@@ -13,9 +13,11 @@ AppState reducer(AppState state, dynamic action) {
       AtualizarPecaNovamente().atualizar();
     } else if (action.pagina == 0) {
       AlterarCard().atualizar();
+    } else if (action.pagina == 1) {
+      AlterarBannerDeCategoria().atualizaModel();
     }
     return AppState(
-        paginaAtual: action.pagina, pecaNovamenteData: state.pecaNovamenteData);
+        paginaAtual: action.pagina, pecaNovamenteData: state.pecaNovamenteData, bannerdecategoriaData: state.bannerdecategoriaData);
   } else if (action is AtualizarPecaNovamente) {
     return AppState(
         paginaAtual: state.paginaAtual,
