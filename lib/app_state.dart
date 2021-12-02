@@ -18,7 +18,6 @@ class AppState {
 
   AppState(
       {this.paginaAtual = 0,
-
       this.pecaNovamenteData = const PecaNovamenteModel(),
       this.bannerdecategoriaData = const BannerDeCategoriaModel([
         CategoriaBanner('Salgados',
@@ -42,20 +41,7 @@ class AppState {
         CategoriaBanner('Cozinha Rápida',
             'https://cdn.discordapp.com/attachments/814528592419094570/912191949136605184/19C1-comida-rapida.png'),
       ]),
-      this.cardcategoriaData = const CategoriaModel([
-        Categoria('Pizza', AppCores.vermelhoPrincipal,
-            'https://cdn.discordapp.com/attachments/809775517493624852/910621459393699860/acai.jpg'),
-        Categoria('Mercado', Color(0xffffffff),
-            'https://cdn.discordapp.com/attachments/809775517493624852/910621463466344478/brasileira.jpg'),
-        Categoria('Vale Alimentacao', Color(0xffA553BE),
-            'https://cdn.discordapp.com/attachments/809775517493624852/910621464745623572/cafe.jpg'),
-        Categoria('Sorvete', Color(0xffF8879B),
-            'https://cdn.discordapp.com/attachments/809775517493624852/910621465857101824/doces.jpg'),
-        Categoria('Hamburguer', Color(0xffA553BE),
-            'https://cdn.discordapp.com/attachments/809775517493624852/910621467291570186/japones.jpg'),
-        Categoria('Doces', Color(0xffF8879B),
-            'https://cdn.discordapp.com/attachments/868118606448324638/910683119441547284/saudavel.jpg')
-      ]),
+      this.cardcategoriaData = const CategoriaModel(),
       this.maispedidosData = const MaisPedidosModel([
         MaisPedidos('Bar do Diluc', 'Fechado',
             'https://cdn.discordapp.com/attachments/809775517493624852/910734117115674624/b3225dcdeebef9074c9c082afde8d495_2527226506439238336.png'),
