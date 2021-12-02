@@ -12,7 +12,8 @@ class AlterarCard {
 
   List<Categoria> categoriaLista = [];
 
-  void atualizar() {
+  void atualizar()
+  {
     FirebaseFirestore.instance
         .collection('categorias')
         .get()
@@ -22,6 +23,7 @@ class AlterarCard {
       });
       appStore.dispatcher(AlterarCard(
           cardcategoriaData: CategoriaModel(categoriaLista: categoriaLista)));
-    });
+    }
+    );
   }
 }

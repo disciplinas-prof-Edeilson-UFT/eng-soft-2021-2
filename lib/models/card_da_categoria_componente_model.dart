@@ -16,5 +16,6 @@ class CategoriaModel {
       {this.categoriaLista = const [
         Categoria('', Colors.red,
             'https://cdn.discordapp.com/attachments/809775517493624852/910621459393699860/acai.jpg')
-      ]});
+      ]
+      });
 }
