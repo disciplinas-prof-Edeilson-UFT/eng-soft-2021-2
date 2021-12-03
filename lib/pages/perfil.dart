@@ -120,7 +120,7 @@ class _PaginaPerfilState extends State<PaginaPerfil>
                       ),
                     ),
                   ),
-            const Expanded(child: CardConvidar()),
+            Expanded(child: CardConvidar(user: _currentUser)),
             Expanded(
               child: AnimatedBuilder(
                   animation: appStore,
