@@ -36,9 +36,9 @@ class _PaginaPedidosState extends State<PaginaPedidos>
                 animation: appStore,
                 builder: (_, __) {
                   return PecaNovamenteCard(
-                    quantidade:
-                        appStore.state.pecaNovamenteData.pedidos[0].quantidade,
+                    quantidade: appStore.state.pecaNovamenteData.pedidos[0].quantidade,
                     produto: appStore.state.pecaNovamenteData.pedidos[0].nome,
+                    logoEstabelecimentoImgUrl: appStore.state.pecaNovamenteData.urlLogoRestaurante,
                   );
                 },
               )

@@ -1,12 +1,28 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:ifood_engenharia_de_software/models/peca_novamente_model.dart';
 
-class AlterarPecaNovamente {
-  final String urlLogoRestaurante;
-  final List<Produto> pedidos;
+import '../app_store.dart';
 
-  AlterarPecaNovamente(this.urlLogoRestaurante, this.pedidos);
+class AtualizarPecaNovamente {
+  FirebaseFirestore firestore = FirebaseFirestore.instance;
+  final PecaNovamenteModel pecaNovamenteData;
 
-  PecaNovamenteModel pecaNovamenteData = const PecaNovamenteModel(
-      'https://aguardando.fase.de.utilizar.o.storage/',
-      [Produto('Pizza G Calabresa C/Borda Mista', 1)]);
+  AtualizarPecaNovamente({this.pecaNovamenteData = const PecaNovamenteModel()});
+
+  void atualizar() {
+    firestore
+        .collection('pecadenovo')
+        .doc('zVxxTLxTaNDSsy4LWmfH')
+        .get()
+        .then((DocumentSnapshot documento) {
+      String urlLogoRestaurante = documento['logo_estabelecimento_img_url'];
+      Produto produto = Produto(documento['produto'], documento['quantidade']);
+
+      PecaNovamenteModel pecaNovamenteData = PecaNovamenteModel(
+          urlLogoRestaurante: urlLogoRestaurante, pedidos: [produto]);
+
+      appStore.dispatcher(
+          AtualizarPecaNovamente(pecaNovamenteData: pecaNovamenteData));
+    });
+  }
 }

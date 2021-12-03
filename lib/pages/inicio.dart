@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ifood_engenharia_de_software/components/inicio/card_da_categoria_componente.dart';
 import 'package:ifood_engenharia_de_software/components/inicio/menu_de_redirecionamento_componente.dart';
+import 'package:ifood_engenharia_de_software/components/inicio/mercadotoque_aqui_e_escolha_os_itens.dart';
 import 'package:ifood_engenharia_de_software/components/inicio/ultimas_lojas_componente.dart';
 import 'package:ifood_engenharia_de_software/utilities/cores.dart';
 import 'package:ifood_engenharia_de_software/app_store.dart';
@@ -33,15 +34,14 @@ class _PaginaInicioState extends State<PaginaInicio>
 
 
 
-        const Expanded(
-            child: UltimasLojasRestaurante(
-          listalojas: [
-            'Loja exemplo1',
-            'Loja exemplo2',
-            'Loja exemplo3',
-            'Loja exemplo4'
-          ],
-        ))
+        AnimatedBuilder(
+              animation: appStore,
+              builder: (_, index) {
+                return UltimasLojasRestaurante(
+                    listalojas:
+                        appStore.state.ultimaslojasData.listadaslojas);
+              }),
+          Expanded(child: CardEscolha())
       ]),
     );
   }

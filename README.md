@@ -2,7 +2,24 @@
 
 ## Etapa de desenvolvimento
 
-### Semana 2 - 11/11/2021 - 18/11/20213
+### Semana 3 e 4 - 18/11/2021 - 02/12/2021
+
+- [ ] R0 - Tela de início
+	- [x] T8 - Resgatando dados do firebase do R0/T1 - Pablo henrique
+- [ ] R1 - Tela de busca
+	- [x] T2 - mecanismo de busca - Luana
+	- [x] T5-firebase do R1/T1 - Arthur Fernandes
+- [ ] R2 - Tela de pedidos
+	- [x] T2 - mais pedidos por voce firestore - carlos eduardo
+	- [x] T5 - Resgatando dados do firestore do R2/T4 - Lindomar Rodrigues
+	- [x] T3 - Histórico - Neudison Filho
+- [ ] R3 - Tela de perfil
+	- [x] T5 - Model e actions Butão do R3/T3 - Vinicius de Oliveira
+- [ ] R4 - Firebase
+	- [x] Documentos cadastrados(estáticos) - Marcos Gilmário
+
+
+### Semana 2 - 11/11/2021 - 18/11/2021
 
 - [ ] R0 - Tela de início
 	 - [x] T6 - state, model e action do R0/T1 - Pablo henrique

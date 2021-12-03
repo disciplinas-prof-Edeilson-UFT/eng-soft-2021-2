@@ -9,13 +9,7 @@ class PecaNovamenteModel {
   final String urlLogoRestaurante;
   final List<Produto> pedidos;
 
-  const PecaNovamenteModel(this.urlLogoRestaurante, this.pedidos);
+  const PecaNovamenteModel(
+      {this.urlLogoRestaurante = '', this.pedidos = const [Produto('', 0)]});
 
-  fromFirestore() {
-    // TODO
-  }
-
-  toFirestore() {
-    // TODO
-  }
 }

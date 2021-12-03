@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:ifood_engenharia_de_software/components/perfil/abas_inferiores_do_perfil_componente.dart';
 import 'package:ifood_engenharia_de_software/components/perfil/cabecalho_perfil_componente.dart';
 import 'package:ifood_engenharia_de_software/utilities/fire_auth.dart';
+import 'package:ifood_engenharia_de_software/app_store.dart';
 
 import 'login_page.dart';
 
@@ -120,19 +121,15 @@ class _PaginaPerfilState extends State<PaginaPerfil>
                     ),
                   ),
             Expanded(child: CardConvidar(user: _currentUser)),
-            const Expanded(
-                child: AbaInfCard(
-              listaabas: [
-                Aba("Ajuda", Icon(Icons.help_outline, color: Colors.black38)),
-                Aba("Configurações",
-                    Icon(Icons.settings, color: Colors.black38)),
-                Aba("Segurança", Icon(Icons.security, color: Colors.black38)),
-                Aba("Usar no carro",
-                    Icon(Icons.qr_code, color: Colors.black38)),
-                Aba("Sugerir restaurantes",
-                    Icon(Icons.add_business_outlined, color: Colors.black38)),
-              ],
-            )),
+            Expanded(
+              child: AnimatedBuilder(
+                  animation: appStore,
+                  builder: (_,index){
+                    return AbaInfCard(
+                        listaabas: appStore.state.abasinferioresData.listadasabas);
+                  }
+              ),
+            ),
           ],
         ),
       ),

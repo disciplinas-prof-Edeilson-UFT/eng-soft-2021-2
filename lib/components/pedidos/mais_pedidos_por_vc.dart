@@ -19,7 +19,7 @@ class MaisPedidosPorVcCard extends StatelessWidget {
             itemBuilder: (_, index) => SizedBox(
                   width: MediaQuery.of(context).size.width * 0.38,
                   child: Column(children: [
-                    const SizedBox(height: 40),
+                    const SizedBox(height: 10),
                     Container(
                       height: 140,
                       width: 130,
