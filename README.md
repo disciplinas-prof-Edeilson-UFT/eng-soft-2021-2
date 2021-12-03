@@ -12,6 +12,7 @@
 - [ ] R2 - Tela de pedidos
 	- [x] T2 - mais pedidos por voce firestore - carlos eduardo
 	- [x] T5 - Resgatando dados do firestore do R2/T4 - Lindomar Rodrigues
+	- [x] T3 - Histórico - Neudison Filho
 - [ ] R3 - Tela de perfil
 	- [x] T5 - Model e actions Butão do R3/T3 - Vinicius de Oliveira
 - [ ] R4 - Firebase
