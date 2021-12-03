@@ -9,13 +9,6 @@ class MaisPedidos {
 class MaisPedidosModel {
   final List<MaisPedidos> maispedidoslist;
 
-  const MaisPedidosModel(this.maispedidoslist);
-
-  fromFirestore() {
-    // TODO
-  }
-
-  toFirestore() {
-    // TODO
-  }
+  const MaisPedidosModel(
+      {this.maispedidoslist = const [MaisPedidos('', '', '')]});
 }

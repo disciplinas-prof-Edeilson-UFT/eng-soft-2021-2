@@ -17,6 +17,7 @@ class AtualizarPecaNovamente {
         .then((DocumentSnapshot documento) {
       String urlLogoRestaurante = documento['logo_estabelecimento_img_url'];
       Produto produto = Produto(documento['produto'], documento['quantidade']);
+
       PecaNovamenteModel pecaNovamenteData = PecaNovamenteModel(
           urlLogoRestaurante: urlLogoRestaurante, pedidos: [produto]);
 
