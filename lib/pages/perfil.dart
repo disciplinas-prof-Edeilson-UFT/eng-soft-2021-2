@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:ifood_engenharia_de_software/components/perfil/abas_inferiores_do_perfil_componente.dart';
 import 'package:ifood_engenharia_de_software/components/perfil/cabecalho_perfil_componente.dart';
+import 'package:ifood_engenharia_de_software/components/perfil/cards_perfil_componente.dart';
 import 'package:ifood_engenharia_de_software/utilities/fire_auth.dart';
 import 'package:ifood_engenharia_de_software/app_store.dart';
 
@@ -120,6 +121,14 @@ class _PaginaPerfilState extends State<PaginaPerfil>
                     ),
                   ),
             Expanded(child: CardConvidar(user: _currentUser)),
+            Expanded(child: OpcoesPerfil(opcoespefils: [
+                Opcoes("Chats", "Minhas conversas", Icon(Icons.chat_outlined)),
+                Opcoes("Carteira", "Meu saldo e QR code", Icon(Icons.account_balance_wallet_outlined)),
+                Opcoes("Clube iFood", "Meus pacotes de desconto", Icon(Icons.confirmation_number_outlined)),
+                Opcoes("Cupons", "Meus cupons de desconto", Icon(Icons.local_activity_outlined)),
+                Opcoes("Fidelidade", "Minhas fidelidades", Icon(Icons.star_rate_outlined)),
+                Opcoes("Favoritos", "Meus locais favoritos", Icon(Icons.favorite_outlined)),
+            ],)),
             Expanded(
               child: AnimatedBuilder(
                   animation: appStore,
