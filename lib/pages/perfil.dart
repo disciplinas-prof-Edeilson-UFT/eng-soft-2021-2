@@ -128,8 +128,6 @@ class _PaginaPerfilState extends State<PaginaPerfil>
                 Opcoes("Cupons", "Meus cupons de desconto", Icon(Icons.local_activity_outlined)),
                 Opcoes("Fidelidade", "Minhas fidelidades", Icon(Icons.star_rate_outlined)),
                 Opcoes("Favoritos", "Meus locais favoritos", Icon(Icons.favorite_outlined)),
-                Opcoes("Favoritos", "Meus locais favoritos", Icon(Icons.favorite_outlined)),
-                Opcoes("Favoritos", "Meus locais favoritos", Icon(Icons.favorite_outlined)),
             ],)),
             Expanded(
               child: AnimatedBuilder(

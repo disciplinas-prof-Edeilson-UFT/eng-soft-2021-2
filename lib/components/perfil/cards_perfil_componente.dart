@@ -20,6 +20,7 @@ class OpcoesPerfil extends StatelessWidget {
     return Column(
       children: [
         SizedBox(
+          height: 150,
           child: ListView.builder(
               shrinkWrap: true,
               scrollDirection: Axis.vertical,
